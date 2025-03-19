@@ -1,0 +1,64 @@
+{
+  "documentTitle": "Vorlage für Zielvereinbarungen:",
+  "institution": "BERUFLICHE BILDUNG BREMERHAVEN",
+  "formFields": [
+    {
+      "fieldNumber": "1",
+      "fieldTitle": "Problembereich: (Kreuzen Sie den relevanten Bereich an oder ergänzen Sie)",
+      "checkboxes": [
+        "[] Arbeitsverhalten (z.B. Pünktlichkeit, Sorgfalt)",
+        "[] Soziale Kompetenzen (z. B. Teamfähigkeit, Kommunikationsfähigkeit)",
+        "[] Methodische Kompetenzen (z. B. Arbeitsorganisation, Lernfähigkeit)",
+        "[] Schulische Kompetenzen (z.B. Deutsch, Mathematik)",
+        "[] Lebenspraktische Fertigkeiten (z.B. Umgang mit Geld, Tagesstruktur)",
+        "[] Interkulturelle Kompetenzen",
+        "[] IT- und Medienkompetenz",
+        "[] Andere:"
+      ]
+    },
+    {
+      "fieldNumber": "2",
+      "fieldTitle": "Problembeschreibung: (Beschreiben Sie das Problem so konkret und beobachtbar wie möglich.\nWas genau fällt Ihnen auf? Wieso ist das problematisch)",
+      "fieldType": "textarea"
+    },
+    {
+      "fieldNumber": "3",
+      "fieldTitle": "Grobziel:",
+      "fieldType": "textarea"
+    },
+    {
+      "fieldNumber": "4",
+      "fieldTitle": "Feinziele:",
+      "subFields": [
+        {
+          "fieldNumber": "•",
+          "fieldTitle": "Feinziel 1 (Messbar & Konkret):",
+          "fieldType": "textarea"
+        },
+        {
+          "fieldNumber": "•",
+          "fieldTitle": "Feinziel 2 (Aktion & Strategie):",
+          "fieldType": "textarea"
+        }
+      ]
+    },
+    {
+      "fieldNumber": "5",
+      "fieldTitle": "Ressourcen/Unterstützung:",
+      "fieldType": "textarea"
+    },
+    {
+      "fieldNumber": "6",
+      "fieldTitle": "Überprüfungsdatum:",
+      "fieldType": "date"
+    },
+    {
+      "fieldTitle": "Unterschrift Teilnehmer/in:",
+      "fieldType": "signature"
+    },
+    {
+      "fieldTitle": "Unterschrift Mitarbeiter/in:",
+      "fieldType": "signature"
+    }
+  ]
+}

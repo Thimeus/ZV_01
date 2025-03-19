@@ -1,0 +1,146 @@
+{
+  "documentTitle": "Leitfaden / Skript für Zielvereinbarungen",
+  "institution": "BERUFLICHE BILDUNG BREMERHAVEN",
+  "sectionsContent": [
+    {
+      "sectionTitle": "Zielvereinbarung - Gemeinsam Ziele erreichen",
+      "subsections": [
+        {
+          "subsectionTitle": "Einleitung:",
+          "content": [
+            "Zielvereinbarungen sind ein zentrales Instrument in der Förderplanung. Sie helfen uns, die Fortschritte",
+            "unserer Teilnehmer systematisch zu planen, zu verfolgen und zu dokumentieren. Eine gute",
+            "Zielvereinbarung ist klar, verständlich und motivierend für den Teilnehmer. Dieser Leitfaden soll Ihnen",
+            "helfen, effektive Zielvereinbarungen zu formulieren, die auf die individuellen Bedürfnisse und",
+            "Herausforderungen jedes Teilnehmers zugeschnitten sind."
+          ]
+        },
+        {
+          "subsectionTitle": "Struktur der Zielvereinbarung:",
+          "content": [
+            "Jede Zielvereinbarung sollte folgende Elemente enthalten:",
+            "1.\tProblembereich: Wo liegt das aktuelle Problem oder die Herausforderung des Teilnehmers?",
+            "2.\tProblembeschreibung: Was genau ist das Problem? Beschreiben Sie es so konkret wie",
+            "möglich.",
+            "3.\tGrobziel: Welches übergeordnete Ziel wollen wir erreichen, um das Problem zu lösen oder zu",
+            "verbessern? (Allgemeine Richtung)",
+            "4.\tFeinziele: Welche konkreten, messbaren Schritte müssen unternommen werden, um das",
+            "Grobziel zu erreichen? (Spezifische Handlungen)",
+            "5.\tRessourcen/Unterstützung: Welche Ressourcen oder Unterstützung benötigt der",
+            "Teilnehmer, um die Feinziele zu erreichen?",
+            "6.\tÜberprüfungsdatum: Wann überprüfen wir gemeinsam den Fortschritt und die",
+            "Zielerreichung?"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Vorlage / Template für Zielvereinbarungen: (Bitte für jeden Teilnehmer individuell ausfüllen)",
+      "formFields": [
+        {
+          "fieldTitle": "Teilnehmer/in:",
+          "fieldType": "text"
+        },
+        {
+          "fieldTitle": "Datum:",
+          "fieldType": "date"
+        },
+        {
+          "fieldNumber": "1",
+          "fieldTitle": "Problembereich: (Kreuzen Sie den relevanten Bereich an oder ergänzen Sie)",
+          "checkboxes": [
+            "[] Arbeitsverhalten (z.B. Pünktlichkeit, Sorgfalt)",
+            "[] Soziale Kompetenzen (z.B. Teamfähigkeit, Kommunikationsfähigkeit)",
+            "[] Methodische Kompetenzen (z.B. Arbeitsorganisation, Lernfähigkeit)",
+            "[] Schulische Kompetenzen (z. B. Deutsch, Mathematik)",
+            "[] Lebenspraktische Fertigkeiten (z. B. Umgang mit Geld, Tagesstruktur)",
+            "[] Interkulturelle Kompetenzen",
+            "[] IT- und Medienkompetenz",
+            "[] Andere:"
+          ]
+        },
+        {
+          "fieldNumber": "2",
+          "fieldTitle": "Problembeschreibung: (Beschreiben Sie das Problem so konkret und beobachtbar wie möglich.\nWas genau fällt Ihnen auf? Was sind die konkreten Beispiele?)",
+          "fieldType": "textarea"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Beispiel-Zielvereinbarung: Verbesserung der Pünktlichkeit",
+      "subsections": [
+        {
+          "subsectionTitle": "(Bitte für jeden Teilnehmer individuell ausfüllen)",
+          "content": [
+            "Teilnehmer/in: Max Mustermann",
+            "Datum: 15.02.2024",
+            "1.\tProblembereich: Arbeitsverhalten (Pünktlichkeit)",
+            "2.\tProblembeschreibung: Max kommt in den letzten Wochen regelmäßig zu spät zum Arbeitsbeginn.",
+            "Er sollte um 8:00 Uhr mit der Arbeit beginnen, ist aber oft erst zwischen 8:15 Uhr und 8:30 Uhr an",
+            "seinem Arbeitsplatz. Dies führt zu Verzögerungen im Arbeitsablauf und stört die Teamarbeit. Letzte",
+            "Woche war er an 3 von 5 Tagen zu spät.",
+            "3.\tGrobziel: Max wird seine Pünktlichkeit verbessern und regelmäßig pünktlich zum Arbeitsbeginn",
+            "erscheinen.",
+            "4.\tFeinziele:",
+            "•\tFeinziel 1 (Messbar & Konkret): Max wird in den nächsten zwei Wochen an mindestens 8",
+            "von 10 Arbeitstagen pünktlich um 8:00 Uhr mit der Arbeit beginnen.",
+            "•\tFeinziel 2 (Aktion & Strategie): Max wird ab sofort jeden Abend seinen Wecker so stellen,",
+            "dass er ausreichend Zeit hat, um pünktlich zur Arbeit zu kommen. Er wird verschiedene",
+            "Weckzeiten ausprobieren, um die optimale Zeit zu finden.",
+            "•\tFeinziel 3 (Selbstkontrolle & Reflexion): Max wird täglich nach der Arbeit kurz reflektieren,",
+            "ob er pünktlich war und was ihm geholfen hat oder was ihn daran gehindert hat. Er wird seine",
+            "Erkenntnisse in einem kleinen Notizbuch festhalten.",
+            "5.\tRessourcen/Unterstützung:",
+            "•\tRegelmäßige Gespräche mit dem Sozialpädagogen/Trainer (z.B. wöchentlich), um",
+            "Fortschritte zu besprechen und Unterstützung zu bieten.",
+            "•\tUnterstützung bei der Entwicklung einer Morgenroutine, die das pünktliche Erscheinen",
+            "erleichtert.",
+            "•\tZugang zu einem Kalender oder einer App zur Erinnerung an Arbeitsbeginn.",
+            "6.\tÜberprüfungsdatum: 01.03.2024 (In zwei Wochen)",
+            "Unterschrift Teilnehmer/in:",
+            "Unterschrift Mitarbeiter/in:"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Wichtige Hinweise für die Formulierung von Feinzielen:",
+      "content": [
+        "•\tSMART-Kriterien: Achten Sie darauf, dass die Feinziele Spezifisch, Messbar, Attraktiv (oder",
+        "Akzeptabel), Realistisch und Terminiert (zeitgebunden) sind.",
+        "•\tPositive Formulierung: Formulieren Sie Ziele positiv und handlungsorientiert (was soll der",
+        "Teilnehmer tun?), anstatt negativ (was soll er nicht tun?).",
+        "•\tRealistische Ziele: Setzen Sie realistische Ziele, die der Teilnehmer in der vereinbarten Zeit",
+        "auch erreichen kann. Kleine, erreichbare Erfolge motivieren mehr als unerreichbare, große",
+        "Ziele.",
+        "•\tTeilnehmer einbeziehen: Entwickeln Sie die Zielvereinbarung gemeinsam mit dem",
+        "Teilnehmer. Seine aktive Beteiligung und Zustimmung sind entscheidend für den Erfolg.",
+        "•\tFlexibilität: Zielvereinbarungen sind nicht in Stein gemeißelt. Sie können und sollten",
+        "angepasst werden, wenn sich die Situation ändert oder neue Erkenntnisse gewonnen werden."
+      ]
+    },
+    {
+      "sectionTitle": "Abschluss:",
+      "content": [
+        "Dieser Leitfaden soll Ihnen als Starthilfe dienen. Das Wichtigste ist, dass Sie und Ihre Mitarbeiter sich",
+        "mit der Logik von Problem, Grobziel und Feinziele vertraut machen und diese auf die individuellen",
+        "Situationen der Teilnehmer anwenden. Durch klare und gemeinsam erarbeitete Zielvereinbarungen",
+        "unterstützen Sie die Teilnehmer effektiv auf ihrem Weg zur beruflichen Integration."
+      ]
+    },
+    {
+      "sectionTitle": "Zusätzliche Tipps für Ihre Mitarbeiter:",
+      "content": [
+        "•\tGespräch suchen: Beginnen Sie mit einem offenen Gespräch mit dem Teilnehmer, um das",
+        "Problem gemeinsam zu verstehen und zu definieren.",
+        "•\tBeobachtungen nutzen: Beziehen Sie sich auf konkrete Beobachtungen und Beispiele, um",
+        "das Problem zu beschreiben.",
+        "•\tRessourcenorientierung: Denken Sie auch an die Stärken und Ressourcen des",
+        "Teilnehmers, die zur Zielerreichung genutzt werden können.",
+        "•\tRegelmäßige Überprüfung: Planen Sie regelmäßige Überprüfungsgespräche ein, um den",
+        "Fortschritt zu besprechen, die Zielvereinbarung anzupassen und den Teilnehmer zu",
+        "motivieren."
+      ]
+    }
+  ]
+}

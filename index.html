@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Förderplanungs-Datenbank | BERUFLICHE BILDUNG BREMERHAVEN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6b6557;
+            --accent-color: #ff8533;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+            --text-dark: #333333;
+            --gray-light: #e9ecef;
+            --gray-medium: #adb5bd;
+            --gray-dark: #6c757d;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+            --header-height: 100px;
+            --sidebar-width: 280px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding-top: var(--header-height);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #D3D3D3;
+            border-bottom: 1px solid #c0c0c0;
+            z-index: 1000;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05);
+        }
+
+        .headline-container {
+            flex-grow: 1;
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        .headline {
+            font-size: 28px;
+            color: var(--text-dark);
+            font-weight: normal;
+        }
+
+        /* Search */
+        .search-container {
+            margin-left: auto;
+            position: relative;
+            width: 300px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid var(--gray-medium);
+            border-radius: 30px;
+            font-size: 15px;
+            transition: var(--transition);
+            background: var(--bg-white);
+        }
+
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(255, 133, 51, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-dark);
+        }
+
+        /* Main Layout */
+        .main-container {
+            display: flex;
+            min-height: calc(100vh - var(--header-height));
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--bg-white);
+            border-right: 1px solid var(--gray-light);
+            padding: 20px 0;
+            position: fixed;
+            left: 0;
+            top: var(--header-height);
+            height: calc(100vh - var(--header-height));
+            overflow-y: auto;
+            transition: var(--transition);
+            z-index: 100;
+        }
+
+        .sidebar.collapsed {
+            width: 60px;
+            overflow: visible;
+        }
+
+        .nav-toggle {
+            position: absolute;
+            right: -15px;
+            top: 20px;
+            background: var(--accent-color);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 101;
+        }
+
+        .nav-section {
+            margin-bottom: 20px;
+        }
+
+        .nav-header {
+            padding: 10px 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .nav-header i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .nav-header .section-title {
+            transition: var(--transition);
+        }
+
+        .sidebar.collapsed .nav-header .section-title {
+            display: none;
+        }
+
+        .nav-items {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .nav-section.active .nav-items {
+            max-height: 500px;
+        }
+
+        .nav-item {
+            padding: 8px 20px 8px 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .sidebar.collapsed .nav-item {
+            padding-left: 20px;
+        }
+
+        .nav-item:hover {
+            background-color: var(--gray-light);
+            color: var(--accent-color);
+        }
+
+        .nav-item.active {
+            background-color: rgba(255, 133, 51, 0.1);
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .nav-item.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background-color: var(--accent-color);
+        }
+
+        .sidebar.collapsed .nav-item span {
+            display: none;
+        }
+
+        .sidebar.collapsed .nav-item:hover {
+            position: relative;
+        }
+
+        .sidebar.collapsed .nav-item:hover span {
+            display: block;
+            position: absolute;
+            left: 60px;
+            top: 0;
+            background: var(--bg-white);
+            padding: 8px 15px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            box-shadow: var(--shadow);
+            white-space: nowrap;
+            border-left: 4px solid var(--accent-color);
+            z-index: 100;
+        }
+
+        /* Content Area */
+        .content-area {
+            flex-grow: 1;
+            padding: 30px;
+            margin-left: var(--sidebar-width);
+            transition: var(--transition);
+        }
+
+        .sidebar.collapsed + .content-area {
+            margin-left: 60px;
+        }
+
+        .content-section {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--gray-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .section-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-button {
+            background: var(--gray-light);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .action-button:hover {
+            background: var(--gray-medium);
+        }
+
+        .action-button.primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .action-button.primary:hover {
+            background: #e67021;
+        }
+
+        /* Content Cards */
+        .content-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 20px;
+            transition: var(--transition);
+            border: 1px solid var(--gray-light);
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .card-body {
+            color: var(--gray-dark);
+        }
+
+        .card-footer {
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Content Details */
+        .content-details {
+            padding: 20px;
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .detail-header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .detail-title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        .detail-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-dark);
+            margin-top: 5px;
+        }
+
+        .detail-content {
+            line-height: 1.8;
+        }
+
+        .detail-section {
+            margin-bottom: 20px;
+        }
+
+        .detail-section-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .detail-list {
+            padding-left: 20px;
+        }
+
+        .detail-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--gray-medium);
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(255, 133, 51, 0.1);
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-check-input {
+            margin-right: 10px;
+        }
+
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--gray-light);
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: var(--transition);
+        }
+
+        .tab.active {
+            border-bottom-color: var(--accent-color);
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .content-cards {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                width: 250px;
+            }
+            
+            .sidebar.mobile-active {
+                transform: translateX(0);
+            }
+            
+            .content-area {
+                margin-left: 0;
+            }
+            
+            .sidebar.collapsed + .content-area {
+                margin-left: 0;
+            }
+            
+            .mobile-nav-toggle {
+                display: block;
+                position: fixed;
+                left: 20px;
+                top: calc(var(--header-height) + 20px);
+                z-index: 1000;
+                background: var(--accent-color);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                cursor: pointer;
+                box-shadow: var(--shadow);
+            }
+            
+            .header {
+                padding: 0 10px;
+            }
+            
+            .logo-image {
+                height: 40px;
+            }
+            
+            .headline {
+                font-size: 20px;
+            }
+            
+            .search-container {
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .content-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                height: 80px;
+            }
+            
+            .content-area {
+                padding: 20px 15px;
+            }
+            
+            .headline-container {
+                display: none;
+            }
+        }
+
+        /* Loader */
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+
+        .loader::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--gray-light);
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--bg-white);
+            padding: 15px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 9999;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast.success {
+            border-left: 4px solid #28a745;
+        }
+
+        .toast.error {
+            border-left: 4px solid #dc3545;
+        }
+
+        .toast.info {
+            border-left: 4px solid #17a2b8;
+        }
+
+        .toast i {
+            font-size: 1.5rem;
+        }
+
+        .toast.success i {
+            color: #28a745;
+        }
+
+        .toast.error i {
+            color: #dc3545;
+        }
+
+        .toast.info i {
+            color: #17a2b8;
+        }
+
+        /* Font Styling */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.75rem; }
+        h3 { font-size: 1.5rem; }
+        h4 { font-size: 1.25rem; }
+        h5 { font-size: 1.1rem; }
+        h6 { font-size: 1rem; }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .d-flex { display: flex; }
+        .align-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .mt-10 { margin-top: 10px; }
+        .mt-20 { margin-top: 20px; }
+        .mb-10 { margin-bottom: 10px; }
+        .mb-20 { margin-bottom: 20px; }
+        .p-20 { padding: 20px; }
+    </style>
+</head>
+<body>
+    <!-- Header from BBB_Kopfzeile_basic -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://cdn.jsdelivr.net/gh/Thimeus/BBB@main/logo_bbb_1.png" alt="Berufliche Bildung Bremerhaven Logo" class="logo-image">
+        </div>
+        <div class="headline-container">
+            <h1 class="headline">Förderplanungs-Datenbank</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Suchen...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Toggle -->
+    <div class="mobile-nav-toggle" id="mobileNavToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-chevron-left" id="navToggleIcon"></i>
+            </div>
+
+            <div class="nav-section active" data-section="leitfaden">
+                <div class="nav-header">
+                    <i class="fas fa-book"></i>
+                    <span class="section-title">Leitfaden</span>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-item active" data-content="einfuehrung">
+                        <span>Einführung</span>
+                    </div>
+                    <div class="nav-item" data-content="struktur">
+                        <span>Struktur der Zielvereinbarung</span>
+                    </div>
+                    <div class="nav-item" data-content="hinweise">
+                        <span>Wichtige Hinweise</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section" data-section="textbausteine">
+                <div class="nav-header">
+                    <i class="fas fa-tasks"></i>
+                    <span class="section-title">Textbausteine</span>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-item" data-content="arbeitsverhalten">
+                        <span>Arbeitsverhalten</span>
+                    </div>
+                    <div class="nav-item" data-content="soziale-kompetenzen">
+                        <span>Soziale Kompetenzen</span>
+                    </div>
+                    <div class="nav-item" data-content="methodische-kompetenzen">
+                        <span>Methodische Kompetenzen</span>
+                    </div>
+                    <div class="nav-item" data-content="schulische-kompetenzen">
+                        <span>Schulische Kompetenzen</span>
+                    </div>
+                    <div class="nav-item" data-content="lebenspraktische-fertigkeiten">
+                        <span>Lebenspraktische Fertigkeiten</span>
+                    </div>
+                    <div class="nav-item" data-content="interkulturelle-kompetenzen">
+                        <span>Interkulturelle Kompetenzen</span>
+                    </div>
+                    <div class="nav-item" data-content="it-medienkompetenz">
+                        <span>IT- und Medienkompetenz</span>
+                    </div>
+                    <div class="nav-item" data-content="andere-kompetenzen">
+                        <span>Andere Kompetenzbereiche</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section" data-section="umsetzung">
+                <div class="nav-header">
+                    <i class="fas fa-cogs"></i>
+                    <span class="section-title">Umsetzung</span>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-item" data-content="grundlagen">
+                        <span>Grundlagen der Förderplanung</span>
+                    </div>
+                    <div class="nav-item" data-content="schritte">
+                        <span>Schritte der Förderplanung</span>
+                    </div>
+                    <div class="nav-item" data-content="dokumentation">
+                        <span>Dokumentation</span>
+                    </div>
+                    <div class="nav-item" data-content="zielvereinbarung">
+                        <span>Zielvereinbarung in kleinen Schritten</span>
+                    </div>
+                    <div class="nav-item" data-content="praxisbeispiele">
+                        <span>Praxisbeispiele</span>
+                    </div>
+                    <div class="nav-item" data-content="reflexion">
+                        <span>Reflexion und Anpassung</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-section" data-section="vorlagen">
+                <div class="nav-header">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="section-title">Vorlagen</span>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-item" data-content="formulare">
+                        <span>Zielvereinbarungsformular</span>
+                    </div>
+                    <div class="nav-item" data-content="beispiel">
+                        <span>Beispiel-Zielvereinbarung</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Area -->
+        <div class="content-area" id="contentArea">
+            <div class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Willkommen zur Förderplanungs-Datenbank</h2>
+                    <div class="section-actions">
+                        <button class="action-button"><i class="fas fa-download"></i> Exportieren</button>
+                        <button class="action-button primary"><i class="fas fa-print"></i> Drucken</button>
+                    </div>
+                </div>
+                <p>Diese Datenbank bietet Ihnen Zugriff auf strukturierte Informationen und Hilfsmittel zur professionellen Förderplanung. Navigieren Sie durch die verschiedenen Bereiche, um Leitfäden, Textbausteine, Umsetzungshilfen und Vorlagen zu finden.</p>
+                
+                <div class="content-cards mt-20">
+                    <div class="card">
+                        <div class="card-header">Leitfaden</div>
+                        <div class="card-body">
+                            Grundlegende Informationen und Anleitung zur Erstellung von Zielvereinbarungen in der Förderplanung.
+                        </div>
+                        <div class="card-footer">
+                            <button class="action-button" onclick="navigateTo('leitfaden', 'einfuehrung')">Öffnen</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Textbausteine</div>
+                        <div class="card-body">
+                            Vorgefertigte Textbausteine für verschiedene Kompetenzbereiche, die in Zielvereinbarungen genutzt werden können.
+                        </div>
+                        <div class="card-footer">
+                            <button class="action-button" onclick="navigateTo('textbausteine', 'arbeitsverhalten')">Öffnen</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Umsetzungshilfen</div>
+                        <div class="card-body">
+                            Praktische Anleitungen und Schritte zur Umsetzung der Förderplanung mit konkreten Beispielen.
+                        </div>
+                        <div class="card-footer">
+                            <button class="action-button" onclick="navigateTo('umsetzung', 'grundlagen')">Öffnen</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Vorlagen</div>
+                        <div class="card-body">
+                            Formulare und Beispiele für Zielvereinbarungen, die als Basis für eigene Dokumente dienen können.
+                        </div>
+                        <div class="card-footer">
+                            <button class="action-button" onclick="navigateTo('vorlagen', 'formulare')">Öffnen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section" id="contentContainer">
+                <div class="loader" id="contentLoader"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-info-circle"></i>
+        <div class="toast-content">Nachricht</div>
+    </div>
+
+    <script>
+        // Hauptdaten und ihre Struktur
+        let formulierungData = null;
+        let textbausteinData = null; 
+        let umsetzungData = null;
+        let vorlageData = null;
+
+        // DOM-Elemente
+        const sidebar = document.getElementById('sidebar');
+        const navToggle = document.getElementById('navToggle');
+        const navToggleIcon = document.getElementById('navToggleIcon');
+        const mobileNavToggle = document.getElementById('mobileNavToggle');
+        const contentArea = document.getElementById('contentArea');
+        const contentContainer = document.getElementById('contentContainer');
+        const contentLoader = document.getElementById('contentLoader');
+        const searchInput = document.getElementById('searchInput');
+        const toast = document.getElementById('toast');
+
+        // Event-Listener für Navigation
+        navToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            
+            if (sidebar.classList.contains('collapsed')) {
+                navToggleIcon.classList.remove('fa-chevron-left');
+                navToggleIcon.classList.add('fa-chevron-right');
+            } else {
+                navToggleIcon.classList.remove('fa-chevron-right');
+                navToggleIcon.classList.add('fa-chevron-left');
+            }
+        });
+
+        mobileNavToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('mobile-active');
+        });
+
+        // Navigationssektionen öffnen/schließen
+        document.querySelectorAll('.nav-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const section = header.parentElement;
+                
+                // Schließe alle anderen Sektionen
+                document.querySelectorAll('.nav-section').forEach(s => {
+                    if (s !== section) s.classList.remove('active');
+                });
+                
+                // Toggle aktuelle Sektion
+                section.classList.toggle('active');
+            });
+        });
+
+        // Klick auf Navigationseinträge
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Aktiven Status setzen
+                document.querySelectorAll('.nav-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                item.classList.toggle('active');
+                
+                // Mobile Seitenleiste nach Klick schließen
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('mobile-active');
+                }
+                
+                // Inhalte laden
+                const section = item.closest('.nav-section').dataset.section;
+                const content = item.dataset.content;
+                loadContent(section, content);
+            });
+        });
+
+        // Funktion zum Navigieren zu einer bestimmten Sektion und Inhalt
+        function navigateTo(section, content) {
+            // Entsprechenden Navigationspunkt aktivieren
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.closest('.nav-section')?.dataset.section === section && 
+                    item.dataset.content === content) {
+                    item.classList.add('active');
+                    item.closest('.nav-section').classList.add('active');
+                }
+            });
+            
+            // Inhalt laden
+            loadContent(section, content);
+        }
+
+        // Suchfunktion
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            if (searchTerm.length < 3) return; // Mindestens 3 Zeichen
+            
+            performSearch(searchTerm);
+        });
+
+        function performSearch(term) {
+            showToast('info', 'Suche nach: ' + term);
+            
+            // Hier würde die tatsächliche Suchlogik implementiert werden
+            // Für jetzt nur eine einfache Demo:
+            contentContainer.innerHTML = `
+                <div class="section-header">
+                    <h2 class="section-title">Suchergebnisse für "${term}"</h2>
+                </div>
+                <div class="search-results">
+                    <p>Durchsuche alle Inhalte nach "${term}"...</p>
+                    <div class="content-cards mt-20" id="searchResults">
+                    </div>
+                </div>
+            `;
+            
+            // Demo-Suchergebnisse auf Basis der geladenen Daten
+            const searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = '<div class="loader"></div>';
+            
+            setTimeout(() => {
+                if (!formulierungData || !textbausteinData) {
+                    searchResults.innerHTML = '<p>Die Daten werden noch geladen. Bitte versuchen Sie es später erneut.</p>';
+                    return;
+                }
+                
+                let results = [];
+                
+                // Durchsuche formulierungData
+                if (formulierungData.sectionsContent) {
+                    formulierungData.sectionsContent.forEach(section => {
+                        // Überprüfe Sectiontitel
+                        if (section.sectionTitle.toLowerCase().includes(term)) {
+                            results.push({
+                                title: section.sectionTitle,
+                                section: 'leitfaden',
+                                content: section.sectionTitle.toLowerCase().replace(' ', '-'),
+                                description: `Gefunden im Leitfaden: ${section.sectionTitle}`
+                            });
+                        }
+                        
+                        // Durchsuche Subsections
+                        if (section.subsections) {
+                            section.subsections.forEach(subsection => {
+                                if (subsection.subsectionTitle && subsection.subsectionTitle.toLowerCase().includes(term)) {
+                                    results.push({
+                                        title: subsection.subsectionTitle,
+                                        section: 'leitfaden',
+                                        content: 'struktur',
+                                        description: `Gefunden im Leitfaden unter ${section.sectionTitle}`
+                                    });
+                                }
+                                
+                                // Durchsuche Inhalte
+                                if (subsection.content) {
+                                    const contentText = subsection.content.join(' ');
+                                    if (contentText.toLowerCase().includes(term)) {
+                                        results.push({
+                                            title: subsection.subsectionTitle || section.sectionTitle,
+                                            section: 'leitfaden',
+                                            content: 'hinweise',
+                                            description: `Inhalt enthält den Suchbegriff: "${contentText.substring(contentText.toLowerCase().indexOf(term) - 20, contentText.toLowerCase().indexOf(term) + 20)}..."`
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    });
+                }
+                
+                // Durchsuche textbausteinData
+                if (textbausteinData.sectionsContent) {
+                    textbausteinData.sectionsContent.forEach(section => {
+                        // Überprüfe Sectiontitel
+                        if (section.sectionTitle.toLowerCase().includes(term)) {
+                            results.push({
+                                title: section.sectionTitle,
+                                section: 'textbausteine',
+                                content: section.sectionTitle.toLowerCase().replace(' ', '-'),
+                                description: `Gefunden in Textbausteinen: ${section.sectionTitle}`
+                            });
+                        }
+                        
+                        // Durchsuche Subsections
+                        if (section.subsections) {
+                            section.subsections.forEach(subsection => {
+                                if (subsection.subsectionTitle && subsection.subsectionTitle.toLowerCase().includes(term)) {
+                                    results.push({
+                                        title: subsection.subsectionTitle,
+                                        section: 'textbausteine',
+                                        content: section.sectionTitle.toLowerCase().replace(/\s+\d+\.\s+/, '').replace(/\s+/g, '-'),
+                                        description: `Gefunden in Textbausteinen unter ${section.sectionTitle}`
+                                    });
+                                }
+                                
+                                // Durchsuche verschiedene Inhalte
+                                ['problembeschreibungen', 'grobziel', 'feinziele'].forEach(field => {
+                                    if (subsection[field]) {
+                                        const fieldContent = Array.isArray(subsection[field]) 
+                                            ? subsection[field].join(' ') 
+                                            : subsection[field];
+                                        
+                                        if (fieldContent.toLowerCase().includes(term)) {
+                                            results.push({
+                                                title: `${subsection.subsectionTitle} - ${field}`,
+                                                section: 'textbausteine',
+                                                content: section.sectionTitle.toLowerCase().replace(/\s+\d+\.\s+/, '').replace(/\s+/g, '-'),
+                                                description: `Gefunden in ${field}: "${fieldContent.substring(fieldContent.toLowerCase().indexOf(term) - 20, fieldContent.toLowerCase().indexOf(term) + 20)}..."`
+                                            });
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                    });
+                }
+                
+                // Zeige Ergebnisse an
+                if (results.length > 0) {
+                    searchResults.innerHTML = '';
+                    results.forEach((result, index) => {
+                        if (index < 8) { // Begrenze auf 8 Ergebnisse für bessere Übersicht
+                            const card = document.createElement('div');
+                            card.className = 'card';
+                            card.innerHTML = `
+                                <div class="card-header">${result.title}</div>
+                                <div class="card-body">
+                                    ${result.description}
+                                </div>
+                                <div class="card-footer">
+                                    <button class="action-button" onclick="navigateTo('${result.section}', '${result.content}')">Anzeigen</button>
+                                </div>
+                            `;
+                            searchResults.appendChild(card);
+                        }
+                    });
+                    
+                    if (results.length > 8) {
+                        const moreInfo = document.createElement('p');
+                        moreInfo.className = 'mt-20 text-center';
+                        moreInfo.textContent = `${results.length - 8} weitere Ergebnisse gefunden. Bitte verfeinern Sie Ihre Suche.`;
+                        searchResults.appendChild(moreInfo);
+                    }
+                } else {
+                    searchResults.innerHTML = '<p>Keine Ergebnisse gefunden. Bitte versuchen Sie es mit anderen Suchbegriffen.</p>';
+                }
+            }, 500);
+        }
+
+        // Toast-Benachrichtigungen
+        function showToast(type, message) {
+            toast.className = 'toast ' + type;
+            toast.querySelector('.toast-content').textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Inhalte laden und anzeigen
+        async function loadContent(section, content) {
+            contentLoader.style.display = 'flex';
+            contentContainer.style.opacity = '0.5';
+            
+            // Warte auf die Daten, wenn sie noch nicht geladen sind
+            await loadAllData();
+            
+            let html = '';
+            
+            switch(section) {
+                case 'leitfaden':
+                    html = renderLeitfadenContent(content);
+                    break;
+                case 'textbausteine':
+                    html = renderTextbausteinContent(content);
+                    break;
+                case 'umsetzung':
+                    html = renderUmsetzungContent(content);
+                    break;
+                case 'vorlagen':
+                    html = renderVorlagenContent(content);
+                    break;
+                default:
+                    html = '<p>Inhalt nicht gefunden</p>';
+            }
+            
+            setTimeout(() => {
+                contentLoader.style.display = 'none';
+                contentContainer.style.opacity = '1';
+                contentContainer.innerHTML = html;
+                
+                // Scrolle zum Anfang des Inhalts
+                contentContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+        }
+
+        // Alle Daten laden
+        async function loadAllData() {
+            const promises = [];
+            
+            if (!formulierungData) {
+                promises.push(
+                    fetch('formulierung.json')
+                        .then(response => response.json())
+                        .then(data => { formulierungData = data; })
+                        .catch(error => {
+                            console.error('Error loading formulierungData:', error);
+                            showToast('error', 'Fehler beim Laden der Leitfaden-Daten');
+                        })
+                );
+            }
+            
+            if (!textbausteinData) {
+                promises.push(
+                    fetch('textbaustein.json')
+                        .then(response => response.json())
+                        .then(data => { textbausteinData = data; })
+                        .catch(error => {
+                            console.error('Error loading textbausteinData:', error);
+                            showToast('error', 'Fehler beim Laden der Textbaustein-Daten');
+                        })
+                );
+            }
+            
+            if (!umsetzungData) {
+                promises.push(
+                    fetch('umsetzung.json')
+                        .then(response => response.json())
+                        .then(data => { umsetzungData = data; })
+                        .catch(error => {
+                            console.error('Error loading umsetzungData:', error);
+                            showToast('error', 'Fehler beim Laden der Umsetzungs-Daten');
+                        })
+                );
+            }
+            
+            if (!vorlageData) {
+                promises.push(
+                    fetch('vorlage.json')
+                        .then(response => response.json())
+                        .then(data => { vorlageData = data; })
+                        .catch(error => {
+                            console.error('Error loading vorlageData:', error);
+                            showToast('error', 'Fehler beim Laden der Vorlagen-Daten');
+                        })
+                );
+            }
+            
+            if (promises.length > 0) {
+                return Promise.all(promises);
+            } else {
+                return Promise.resolve();
+            }
+        }
+
+        // Renderfunktionen für jeden Inhaltsbereich
+        function renderLeitfadenContent(content) {
+            if (!formulierungData) return '<p>Daten werden geladen...</p>';
+            
+            let html = '';
+            
+            switch(content) {
+                case 'einfuehrung':
+                    // Einführung aus dem ersten Abschnitt
+                    const einleitung = formulierungData.sectionsContent[0].subsections.find(s => s.subsectionTitle === "Einleitung:");
+                    if (einleitung) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">Einführung: Zielvereinbarung - Gemeinsam Ziele erreichen</h2>
+                            </div>
+                            <div class="detail-content">
+                                <p>${einleitung.content.join(' ')}</p>
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'struktur':
+                    // Struktur der Zielvereinbarung
+                    const struktur = formulierungData.sectionsContent[0].subsections.find(s => s.subsectionTitle === "Struktur der Zielvereinbarung:");
+                    if (struktur) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">Struktur der Zielvereinbarung</h2>
+                            </div>
+                            <div class="detail-content">
+                                <p>${struktur.content[0]}</p>
+                                <ul class="detail-list mt-20">
+                                    ${struktur.content.slice(1).map(item => `<li>${item}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'hinweise':
+                    // Wichtige Hinweise für die Formulierung von Feinzielen
+                    const hinweise = formulierungData.sectionsContent.find(s => s.sectionTitle === "Wichtige Hinweise für die Formulierung von Feinzielen:");
+                    if (hinweise) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">Wichtige Hinweise für die Formulierung von Feinzielen</h2>
+                            </div>
+                            <div class="detail-content">
+                                <ul class="detail-list">
+                                    ${hinweise.content.map(item => `<li>${item}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                default:
+                    html = '<p>Inhalt nicht gefunden</p>';
+            }
+            
+            return html;
+        }
+
+        function renderTextbausteinContent(content) {
+            if (!textbausteinData) return '<p>Daten werden geladen...</p>';
+            
+            let html = '';
+            let section;
+            
+            // Finde die entsprechende Sektion basierend auf dem content-Parameter
+            switch(content) {
+                case 'arbeitsverhalten':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "1. Arbeitsverhalten");
+                    break;
+                case 'soziale-kompetenzen':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "2. Soziale Kompetenzen");
+                    break;
+                case 'methodische-kompetenzen':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "3. Methodische Kompetenzen");
+                    break;
+                case 'schulische-kompetenzen':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "4. Schulische Kompetenzen");
+                    break;
+                case 'lebenspraktische-fertigkeiten':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "5. Lebenspraktische Fertigkeiten");
+                    break;
+                case 'interkulturelle-kompetenzen':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "6. Interkulturelle Kompetenzen");
+                    break;
+                case 'it-medienkompetenz':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "7. IT- und Medienkompetenz");
+                    break;
+                case 'andere-kompetenzen':
+                    section = textbausteinData.sectionsContent.find(s => s.sectionTitle === "8. Andere Kompetenzbereiche");
+                    break;
+                default:
+                    return '<p>Textbaustein nicht gefunden</p>';
+            }
+            
+            if (section) {
+                html = `
+                    <div class="section-header">
+                        <h2 class="section-title">${section.sectionTitle}</h2>
+                        <div class="section-actions">
+                            <button class="action-button" onclick="window.print()"><i class="fas fa-print"></i> Drucken</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs">
+                        ${section.subsections.map((subsection, index) => 
+                            `<div class="tab ${index === 0 ? 'active' : ''}" data-tab="${index}">${subsection.subsectionTitle}</div>`
+                        ).join('')}
+                    </div>
+                `;
+                
+                // Tab-Inhalte
+                html += section.subsections.map((subsection, index) => {
+                    return `
+                        <div class="tab-content ${index === 0 ? 'active' : ''}" data-tab-content="${index}">
+                            <div class="detail-section">
+                                <h3 class="detail-section-title">Problembeschreibungen:</h3>
+                                <div class="detail-content">
+                                    <p>${subsection.problembeschreibungen ? subsection.problembeschreibungen.join(' ') : 'Keine Problembeschreibung verfügbar.'}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3 class="detail-section-title">Grobziel:</h3>
+                                <div class="detail-content">
+                                    <p>${subsection.grobziel || 'Kein Grobziel verfügbar.'}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3 class="detail-section-title">Feinziele:</h3>
+                                <div class="detail-content">
+                                    <ul class="detail-list">
+                                        ${subsection.feinziele ? subsection.feinziele.map(feinziel => `<li>${feinziel}</li>`).join('') : '<li>Keine Feinziele verfügbar.</li>'}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                // Tab-Funktionalität
+                setTimeout(() => {
+                    document.querySelectorAll('.tab').forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            const tabIndex = tab.dataset.tab;
+                            
+                            // Aktiviere den ausgewählten Tab
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            tab.classList.add('active');
+                            
+                            // Zeige den ausgewählten Tab-Inhalt
+                            document.querySelectorAll('.tab-content').forEach(content => {
+                                content.classList.remove('active');
+                                if (content.dataset.tabContent === tabIndex) {
+                                    content.classList.add('active');
+                                }
+                            });
+                        });
+                    });
+                }, 100);
+            }
+            
+            return html;
+        }
+
+        function renderUmsetzungContent(content) {
+            if (!umsetzungData) return '<p>Daten werden geladen...</p>';
+            
+            let html = '';
+            let section;
+            
+            // Finde den relevanten Abschnitt basierend auf dem content-Parameter
+            switch(content) {
+                case 'grundlagen':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "1. Grundlagen der Förderplanung");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                ${section.subsections.map(subsection => `
+                                    <div class="detail-section">
+                                        <h3 class="detail-section-title">${subsection.subsectionTitle}</h3>
+                                        <p>${subsection.content.join(' ')}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'schritte':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "2. Schritte der Förderplanung");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                ${section.subsections.map(subsection => `
+                                    <div class="detail-section">
+                                        <h3 class="detail-section-title">${subsection.subsectionTitle}</h3>
+                                        <p>${subsection.content.join(' ')}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'dokumentation':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "3. Dokumentation der Förderplanung");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                ${section.subsections.map(subsection => `
+                                    <div class="detail-section">
+                                        <h3 class="detail-section-title">${subsection.subsectionTitle}</h3>
+                                        <p>${subsection.content.join(' ')}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'zielvereinbarung':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "4. Zielvereinbarung in kleinen Schritten");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                ${section.subsections.map(subsection => `
+                                    <div class="detail-section">
+                                        <h3 class="detail-section-title">${subsection.subsectionTitle}</h3>
+                                        <p>${subsection.content.join(' ')}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'praxisbeispiele':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "5. Praxisbeispiele");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                <p>${section.content.join(' ')}</p>
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                case 'reflexion':
+                    section = umsetzungData.sectionsContent.find(s => s.sectionTitle === "6. Reflexion und Anpassung");
+                    if (section) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">${section.sectionTitle}</h2>
+                            </div>
+                            <div class="detail-content">
+                                ${section.subsections.map(subsection => `
+                                    <div class="detail-section">
+                                        <h3 class="detail-section-title">${subsection.subsectionTitle}</h3>
+                                        <p>${subsection.content.join(' ')}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                default:
+                    html = '<p>Inhalt nicht gefunden</p>';
+            }
+            
+            return html;
+        }
+
+        function renderVorlagenContent(content) {
+            if (!vorlageData || !formulierungData) return '<p>Daten werden geladen...</p>';
+            
+            let html = '';
+            
+            switch(content) {
+                case 'formulare':
+                    html = `
+                        <div class="section-header">
+                            <h2 class="section-title">Zielvereinbarungsformular</h2>
+                            <div class="section-actions">
+                                <button class="action-button"><i class="fas fa-download"></i> Herunterladen</button>
+                                <button class="action-button primary"><i class="fas fa-print"></i> Drucken</button>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-content">
+                            <form class="p-20">
+                                <div class="form-group">
+                                    <label class="form-label">Teilnehmer/in:</label>
+                                    <input type="text" class="form-control" placeholder="Name des Teilnehmers / der Teilnehmerin">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Datum:</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">1. Problembereich: (Bitte den relevanten Bereich ankreuzen)</label>
+                                    ${vorlageData.formFields[0].checkboxes.map(checkbox => `
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label>${checkbox.replace('[]', '')}</label>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">2. Problembeschreibung:</label>
+                                    <textarea class="form-control" placeholder="Beschreiben Sie das Problem so konkret und beobachtbar wie möglich. Was genau fällt Ihnen auf? Wieso ist das problematisch?"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">3. Grobziel:</label>
+                                    <textarea class="form-control" placeholder="Welches übergeordnete Ziel soll erreicht werden?"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">4. Feinziele:</label>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">• Feinziel 1 (Messbar & Konkret):</label>
+                                        <textarea class="form-control" placeholder="Welche konkreten, messbaren Schritte müssen unternommen werden?"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">• Feinziel 2 (Aktion & Strategie):</label>
+                                        <textarea class="form-control" placeholder="Welche Aktionen und Strategien werden angewendet?"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">• Feinziel 3 (optional):</label>
+                                        <textarea class="form-control" placeholder="Weitere Feinziele (optional)"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">5. Ressourcen/Unterstützung:</label>
+                                    <textarea class="form-control" placeholder="Welche Ressourcen oder Unterstützung benötigt der Teilnehmer?"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">6. Überprüfungsdatum:</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                
+                                <div class="d-flex justify-between mt-20">
+                                    <div class="form-group" style="width: 48%;">
+                                        <label class="form-label">Unterschrift Teilnehmer/in:</label>
+                                        <div style="height: 80px; border: 1px dashed var(--gray-medium); border-radius: 4px;"></div>
+                                    </div>
+                                    
+                                    <div class="form-group" style="width: 48%;">
+                                        <label class="form-label">Unterschrift Mitarbeiter/in:</label>
+                                        <div style="height: 80px; border: 1px dashed var(--gray-medium); border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    `;
+                    break;
+                    
+                case 'beispiel':
+                    // Beispiel-Zielvereinbarung aus formulierungData
+                    const beispiel = formulierungData.sectionsContent.find(s => s.sectionTitle === "Beispiel-Zielvereinbarung: Verbesserung der Pünktlichkeit");
+                    if (beispiel && beispiel.subsections && beispiel.subsections[0]) {
+                        html = `
+                            <div class="section-header">
+                                <h2 class="section-title">Beispiel-Zielvereinbarung: Verbesserung der Pünktlichkeit</h2>
+                                <div class="section-actions">
+                                    <button class="action-button primary"><i class="fas fa-print"></i> Drucken</button>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-content p-20" style="background-color: var(--bg-light); border-radius: var(--border-radius);">
+                                <p style="white-space: pre-line;">${beispiel.subsections[0].content.join('\n')}</p>
+                            </div>
+                        `;
+                    }
+                    break;
+                    
+                default:
+                    html = '<p>Inhalt nicht gefunden</p>';
+            }
+            
+            return html;
+        }
+
+        // Initialisierung
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Lade alle Daten initial
+                await loadAllData();
+                
+                // Lade den Standardinhalt
+                navigateTo('leitfaden', 'einfuehrung');
+                
+                // Zeige einen Erfolgsstatus
+                showToast('success', 'Daten erfolgreich geladen');
+            } catch (error) {
+                console.error('Fehler bei der Initialisierung:', error);
+                showToast('error', 'Fehler beim Laden der Anwendung');
+            }
+        });
+
+        // Fallback für fehlendes Logo
+        document.querySelector('.logo-image').onerror = function() {
+            console.error('Logo konnte nicht geladen werden');
+            
+            // Alternative CDN-Format als erster Fallback
+            const alternativeUrl = "https://cdn.jsdelivr.net/gh/Thimeus/BBB/logo_bbb_1.png";
+            if (this.src !== alternativeUrl) {
+                console.log('Versuche alternatives jsDelivr URL-Format...');
+                this.src = alternativeUrl;
+                return;
+            }
+            
+            // Wenn beide CDN-Ansätze fehlschlagen, verwende textbasierten Fallback
+            const logoContainer = document.querySelector('.logo-container');
+            logoContainer.innerHTML = `
+                <div style="display: flex; flex-direction: column;">
+                    <div>
+                        <span style="color: var(--primary-color); font-size: 24px; font-weight: bold;">BERUFLICHE</span>
+                        <span style="color: var(--accent-color); font-size: 24px; font-weight: bold;"> BILDUNG</span>
+                    </div>
+                    <div style="color: var(--primary-color); font-size: 14px; letter-spacing: 2px;">BREMERHAVEN</div>
+                </div>
+            `;
+        };
+    </script>
+</body>
+</html>

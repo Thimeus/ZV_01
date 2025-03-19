@@ -1,0 +1,865 @@
+{
+  "documentTitle": "Textbausteine für die Förderplanung/ Zielvereinbarung",
+  "institution": "BERUFLICHE BILDUNG BREMERHAVEN",
+  "tableOfContents": {
+    "title": "Inhaltsverzeichnis: Textbausteine für die Förderplanung und Zielvereinbarung",
+    "sections": [
+      {"sectionNumber": null, "sectionTitle": "Einleitung"},
+      {"sectionNumber": "1", "sectionTitle": "Arbeitsverhalten", "subsections": [
+        {"subsectionNumber": "1.1", "subsectionTitle": "Pünktlichkeit"},
+        {"subsectionNumber": "1.2", "subsectionTitle": "Sorgfalt und Genauigkeit"},
+        {"subsectionNumber": "1.3", "subsectionTitle": "Arbeitsplanung und Selbstständigkeit"},
+        {"subsectionNumber": "1.4", "subsectionTitle": "Belastbarkeit und Durchhaltevermögen"}
+      ]},
+      {"sectionNumber": "2", "sectionTitle": "Soziale Kompetenzen", "subsections": [
+        {"subsectionNumber": "2.1", "subsectionTitle": "Teamfähigkeit"},
+        {"subsectionNumber": "2.2", "subsectionTitle": "Kommunikationsfähigkeit"},
+        {"subsectionNumber": "2.3", "subsectionTitle": "Kritik- und Konfliktfähigkeit"},
+        {"subsectionNumber": "2.4", "subsectionTitle": "Angemessenes Sozialverhalten/Umgangsformen"}
+      ]},
+      {"sectionNumber": "3", "sectionTitle": "Methodische Kompetenzen", "subsections": [
+        {"subsectionNumber": "3.1", "subsectionTitle": "Arbeitsorganisation"},
+        {"subsectionNumber": "3.2", "subsectionTitle": "Lernfähigkeit"},
+        {"subsectionNumber": "3.3", "subsectionTitle": "Problemlösefähigkeit"},
+        {"subsectionNumber": "3.4", "subsectionTitle": "Informationsverarbeitung"}
+      ]},
+      {"sectionNumber": "4", "sectionTitle": "Schulische Kompetenzen", "subsections": [
+        {"subsectionNumber": "4.1", "subsectionTitle": "Deutsch - Textverständnis und schriftlicher Ausdruck"},
+        {"subsectionNumber": "4.2", "subsectionTitle": "Mathematische Grundkenntnisse"},
+        {"subsectionNumber": "4.3", "subsectionTitle": "Lese- und Schreibfähigkeit (für Teilnehmer mit geringen Grundkenntnissen)"},
+        {"subsectionNumber": "4.4", "subsectionTitle": "Lernorganisation und Prüfungsvorbereitung"}
+      ]},
+      {"sectionNumber": "5", "sectionTitle": "Lebenspraktische Fertigkeiten", "subsections": [
+        {"subsectionNumber": "5.1", "subsectionTitle": "Umgang mit Geld"},
+        {"subsectionNumber": "5.2", "subsectionTitle": "Tagesstruktur und Selbstorganisation"},
+        {"subsectionNumber": "5.3", "subsectionTitle": "Umgang mit Behörden und Formularen"},
+        {"subsectionNumber": "5.4", "subsectionTitle": "Wohnsituation und Haushaltsführung"}
+      ]},
+      {"sectionNumber": "6", "sectionTitle": "Interkulturelle Kompetenzen", "subsections": [
+        {"subsectionNumber": "6.1", "subsectionTitle": "Sprachliche Verständigung"},
+        {"subsectionNumber": "6.2", "subsectionTitle": "Kulturelles Verständnis und Integration"}
+      ]},
+      {"sectionNumber": "7", "sectionTitle": "IT- und Medienkompetenz", "subsections": [
+        {"subsectionNumber": "7.1", "subsectionTitle": "Grundlegende PC-Kenntnisse"},
+        {"subsectionNumber": "7.2", "subsectionTitle": "Mediennutzung und -kritik"}
+      ]},
+      {"sectionNumber": "8", "sectionTitle": "Andere Kompetenzbereiche", "subsections": [
+        {"subsectionNumber": "8.1", "subsectionTitle": "Gesundheitsbewusstsein"},
+        {"subsectionNumber": "8.2", "subsectionTitle": "Selbstbewusstsein und Selbstwirksamkeit"},
+        {"subsectionNumber": "8.3", "subsectionTitle": "Motivationssteigerung und Eigeninitiative"}
+      ]},
+      {"sectionNumber": "9", "sectionTitle": "Abschluss- und Kombinationsbausteine", "subsections": [
+        {"subsectionNumber": "9.1", "subsectionTitle": "Übergreifende Zielvereinbarungen"},
+        {"subsectionNumber": "9.2", "subsectionTitle": "Vorbereitung auf den Übergang"}
+      ]},
+      {"sectionNumber": null, "sectionTitle": "Hinweise zur Anwendung"}
+    ]
+  },
+  "sectionsContent": [
+    {
+      "sectionTitle": "Einleitung",
+      "content": [
+        "Dieses Dokument bietet strukturierte Textbausteine für die Förderplanung in verschiedenen Problembereichen.",
+        "Die Textbausteine sind nach dem Schema der Zielvereinbarungsvorlage aufgebaut und enthalten jeweils:",
+        "1.\tProblembeschreibungen: Konkrete Formulierungen zur Beschreibung des beobachteten Problems",
+        "2.\tGrobziele: Übergeordnete Zielformulierungen",
+        "3.\tFeinziele: Spezifische, messbare Teilschritte",
+        "Die Bausteine können individuell angepasst werden, indem Details zur spezifischen Situation des Teilnehmers",
+        "ergänzt werden."
+      ]
+    },
+    {
+      "sectionTitle": "1. Arbeitsverhalten",
+      "subsections": [
+        {
+          "subsectionTitle": "1.1 Pünktlichkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in erscheint regelmäßig mit 10-15 Minuten Verspätung zur Arbeit/zum Unterricht. Im",
+            "letzten Monat kam er/sie an 12 von 20 Tagen zu spät, was zu Verzögerungen im Arbeitsablauf führt.",
+            "Er/Sie hat Schwierigkeiten, die festgelegten Pausenzeiten einzuhalten und kehrt oft erst 5-10 Minuten",
+            "nach Ende der Pause an den Arbeitsplatz zurück.",
+            "Bei vereinbarten Terminen (z.B. Beratungsgespräche, Arzttermine) erscheint er/sie häufig nicht zur",
+            "vereinbarten Zeit oder gar nicht, was die Zusammenarbeit erschwert.",
+            "Die unregelmäßige Anwesenheit führt zu Lücken im Lernprozess und erschwert die kontinuierliche",
+            "Förderung."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert seine/ihre Pünktlichkeit und hält vereinbarte Zeiten zuverlässig ein.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erscheint innerhalb der nächsten vier Wochen an mindestens 90% der",
+            "Arbeitstage pünktlich zum Arbeitsbeginn (8:00 Uhr).",
+            "Er/Sie hält die vereinbarten Pausenzeiten ein und kehrt pünktlich an den Arbeitsplatz zurück.",
+            "Er/Sie plant ab sofort mehr Zeit für den Weg ein und berücksichtigt dabei mögliche Verzögerungen im",
+            "öffentlichen Nahverkehr.",
+            "Er/Sie nutzt Erinnerungsfunktionen auf dem Smartphone, um sich rechtzeitig auf Termine hinweisen zu",
+            "lassen.",
+            "Bei absehbaren Verspätungen meldet er/sie sich eigenständig telefonisch und informiert über die",
+            "voraussichtliche Ankunftszeit."
+          ]
+        },
+        {
+          "subsectionTitle": "1.2 Sorgfalt und Genauigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in führt Arbeitsaufträge häufig unvollständig oder fehlerhaft aus, was Nacharbeit",
+            "erforderlich macht. Beispielsweise wurden bei den letzten drei schriftlichen Aufgaben jeweils mehr als",
+            "50% der Anforderungen nicht erfüllt.",
+            "Bei handwerklichen Tätigkeiten werden wichtige Details übersehen, was die Qualität des Endprodukts",
+            "beeinträchtigt.",
+            "Schriftliche Unterlagen werden nachlässig geführt mit vielen Durchstreichungen, fehlenden Angaben",
+            "oder unleserlicher Schrift.",
+            "Er/Sie kontrolliert die eigene Arbeit nicht auf Fehler oder Vollständigkeit, bevor sie abgegeben wird.",
+            "Die Arbeitsumgebung ist unordentlich und Werkzeuge/Materialien werden nicht sorgsam behandelt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in arbeitet sorgfältig und genau, um qualitativ hochwertige Arbeitsergebnisse zu erzielen.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in überprüft jedes fertiggestellte Arbeitsergebnis anhand einer selbst erstellten",
+            "Checkliste auf Vollständigkeit und Qualität, bevor es abgegeben wird.",
+            "Er/Sie verbessert innerhalb von sechs Wochen die Fehlerquote bei schriftlichen Aufgaben um",
+            "mindestens 50%.",
+            "Er/Sie führt ein übersichtliches Arbeitsheft/eine Dokumentation, die alle relevanten Informationen enthält",
+            "und lesbar gestaltet ist.",
+            "Er/Sie hält seinen/ihren Arbeitsplatz ordentlich und räumt Werkzeuge und Materialien nach Gebrauch an",
+            "den vorgesehenen Platz zurück.",
+            "Er/Sie gibt sich für jede Aufgabe ausreichend Zeit und arbeitet konzentriert, um die Qualität zu sichern."
+          ]
+        },
+        {
+          "subsectionTitle": "1.3 Arbeitsplanung und Selbstständigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in beginnt Aufgaben, ohne diese vorher zu durchdenken oder zu planen, was zu",
+            "ineffizienten Arbeitsprozessen führt.",
+            "Er/Sie hat Schwierigkeiten, die einzelnen Arbeitsschritte einer Aufgabe in sinnvoller Reihenfolge zu",
+            "organisieren.",
+            "Bei komplexeren Aufgaben benötigt er/sie häufig Unterstützung, um die nächsten Schritte zu",
+            "identifizieren.",
+            "Er/Sie arbeitet nur unter direkter Anleitung produktiv und zeigt wenig Eigeninitiative.",
+            "Oft werden Werkzeuge oder Materialien, die für die Aufgabe benötigt werden, nicht selbstständig",
+            "zusammengestellt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in plant und organisiert Arbeitsaufgaben selbstständig und führt sie eigenverantwortlich",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erstellt vor Beginn komplexer Aufgaben schriftlich einen strukturierten Arbeitsplan",
+            "mit allen notwendigen Schritten.",
+            "Er/Sie sammelt vor Arbeitsbeginn selbstständig alle benötigten Materialien und Werkzeuge.",
+            "Er/Sie bearbeitet innerhalb der nächsten vier Wochen mindestens drei einfache Aufgaben vollständig",
+            "selbstständig ohne Hilfestellung.",
+            "Er/Sie identifiziert selbstständig, wann ein nächster Arbeitsschritt beginnen kann, ohne auf Anweisung",
+            "zu warten.",
+            "Bei Unklarheiten fragt er/sie gezielt nach und sucht eigenständig nach Lösungsmöglichkeiten, bevor",
+            "er/sie um Hilfe bittet."
+          ]
+        },
+        {
+          "subsectionTitle": "1.4 Belastbarkeit und Durchhaltevermögen",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in bricht Aufgaben, die länger als 20 Minuten dauern, häufig vorzeitig ab oder sucht",
+            "nach Ablenkung.",
+            "Bei Schwierigkeiten oder Rückschlägen gibt er/sie schnell auf, anstatt nach Lösungen zu suchen.",
+            "Die Arbeitsleistung schwankt stark je nach Tagesform und äußeren Einflüssen.",
+            "Bei zunehmender Komplexität oder Arbeitsmenge zeigt er/sie Stressreaktionen wie Nervosität,",
+            "Konzentrationsverlust oder aggressives Verhalten.",
+            "Längere Arbeitsphasen (mehr als 2 Stunden) führen zu deutlichem Leistungsabfall und erhöhter",
+            "Fehlerquote."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in steigert seine/ihre Belastbarkeit und sein/ihr Durchhaltevermögen für kontinuierliche",
+          "feinziele": [
+            "Der/Die Teilnehmer/in arbeitet innerhalb der nächsten sechs Wochen kontinuierlich an einer Aufgabe,",
+            "bis diese abgeschlossen ist, und steigert dabei die Arbeitszeit schrittweise von 20 auf 45 Minuten.",
+            "Er/Sie identifiziert bei auftretenden Schwierigkeiten mindestens zwei alternative Lösungswege, bevor",
+            "er/sie Unterstützung anfordert.",
+            "Er/Sie entwickelt im nächsten Monat drei persönliche Strategien zum Umgang mit Stress und wendet",
+            "diese in belastenden Situationen an.",
+            "Er/Sie führt ein Arbeitsjournal, in dem er/sie täglich die eigene Ausdauer und Arbeitsqualität reflektiert",
+            "und Fortschritte dokumentiert.",
+            "Er/Sie erkennt eigene Belastungsgrenzen und kommuniziert diese angemessen, bevor es zu",
+            "Überforderung kommt."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "2. Soziale Kompetenzen",
+      "subsections": [
+        {
+          "subsectionTitle": "2.1 Teamfähigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in arbeitet bevorzugt alleine und vermeidet die Zusammenarbeit mit anderen, selbst",
+            "wenn Aufgaben im Team effizienter gelöst werden könnten.",
+            "In Gruppensituationen beteiligt er/sie sich kaum am gemeinsamen Arbeitsprozess und bringt eigene",
+            "Ideen nur selten ein.",
+            "Er/Sie zeigt wenig Bereitschaft, Aufgaben zu übernehmen, die dem gemeinsamen Ziel dienen,",
+            "konzentriert sich stattdessen nur auf eigene Interessen.",
+            "Bei Teamarbeit kommt es häufig zu Konflikten, da er/sie Schwierigkeiten hat, Kompromisse einzugehen",
+            "oder andere Meinungen zu akzeptieren.",
+            "Die Zusammenarbeit mit wechselnden Teammitgliedern fällt ihm/ihr schwer, er/sie bevorzugt feste",
+            "Bezugspersonen."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert seine/ihre Teamfähigkeit und arbeitet konstruktiv mit anderen zusammen.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in bringt sich innerhalb der nächsten vier Wochen aktiv in mindestens drei",
+            "Gruppenaufgaben ein und übernimmt dort eigenständig Teilaufgaben.",
+            "Er/Sie äußert in Teambesprechungen eigene Ideen und Vorschläge und reagiert wertschätzend auf die",
+            "Beiträge anderer.",
+            "Er/Sie stimmt seine/ihre Arbeitsschritte mit den Teammitgliedern ab und hält getroffene Vereinbarungen",
+            "zuverlässig ein.",
+            "Bei unterschiedlichen Meinungen sucht er/sie aktiv nach Kompromissen und ist bereit, eigene",
+            "Vorstellungen anzupassen.",
+            "Er/Sie reflektiert nach jeder Teamarbeit sein/ihr Verhalten und benennt mindestens einen gelungenen",
+            "Aspekt und einen Verbesserungsbereich."
+          ]
+        },
+        {
+          "subsectionTitle": "2.2 Kommunikationsfähigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, sich verständlich auszudrücken. Sätze werden oft",
+            "unvollständig formuliert oder sind für andere schwer nachvollziehbar.",
+            "In Gesprächen unterbricht er/sie häufig andere und hört nicht aktiv zu, was zu Missverständnissen führt.",
+            "Er/Sie spricht entweder auffallend leise und undeutlich oder unangemessen laut."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in kommuniziert klar, angemessen und situationsgerecht mit verschiedenen",
+          "feinziele": [
+            "Der/Die Teilnehmer/in formuliert in Gesprächen vollständige und verständliche Sätze und fragt nach,",
+            "wenn er/sie etwas nicht verstanden hat.",
+            "Er/Sie übt aktives Zuhören, indem er/sie Gesprächspartner ausreden lässt und das Gehörte mit eigenen",
+            "Worten zusammenfasst.",
+            "Er/Sie achtet bewusst auf eine angemessene Lautstärke und Deutlichkeit beim Sprechen.",
+            "Er/Sie entwickelt Bewusstsein für die eigene Körpersprache und übt, diese gezielt einzusetzen (z.B.",
+            "Blickkontakt, offene Körperhaltung).",
+            "In Konfliktsituationen kommuniziert er/sie seine/ihre Bedürfnisse mit Ich-Botschaften, ohne andere",
+            "anzugreifen oder sich zurückzuziehen."
+          ]
+        },
+        {
+          "subsectionTitle": "2.3 Kritik- und Konfliktfähigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in reagiert auf Kritik oder Korrekturen sehr empfindlich und nimmt diese persönlich,",
+            "was häufig zu emotionalen Reaktionen (Wut, Tränen, Rückzug) führt.",
+            "Es fällt ihm/ihr schwer, eigene Fehler einzugestehen oder Verbesserungsvorschläge anderer",
+            "anzunehmen.",
+            "Bei Meinungsverschiedenheiten oder Konflikten mit anderen zieht er/sie sich zurück oder reagiert mit",
+            "unangemessener Aggression.",
+            "Er/Sie kann Kritik an anderen nicht konstruktiv äußern, sondern wird schnell verletzend oder vermeidet",
+            "die Ansprache von Problemen gänzlich.",
+            "In Konfliktsituationen neigt er/sie dazu, die Schuld bei anderen zu suchen, anstatt eigene Anteile zu",
+            "reflektieren."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in geht konstruktiv mit Kritik um und entwickelt Strategien zur gewaltfreien Konfliktlösung.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in nimmt Rückmeldungen zu seinem/ihrem Arbeitsverhalten an, ohne sofort",
+            "emotional zu reagieren, und sieht diese als Chance zur Verbesserung.",
+            "Er/Sie formuliert bei Meinungsverschiedenheiten eigene Standpunkte sachlich und respektiert",
+            "abweichende Meinungen anderer.",
+            "Er/Sie erkennt und benennt in Konfliktsituationen eigene Gefühle und kommuniziert diese angemessen",
+            "mit Ich-Botschaften.",
+            "Er/Sie entwickelt drei unterschiedliche Strategien zum Umgang mit Frustration und wendet diese in",
+            "belastenden Situationen an.",
+            "Er/Sie reflektiert nach Konflikten sein/ihr Verhalten und übernimmt Verantwortung für eigene Anteile."
+          ]
+        },
+        {
+          "subsectionTitle": "2.4 Angemessenes Sozialverhalten/Umgangsformen",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, seine/ihre Verhaltensweisen an unterschiedliche soziale",
+            "Kontexte anzupassen (z.B. Unterschied zwischen informellem Umgang mit Gleichaltrigen und",
+            "formelleren Situationen mit Vorgesetzten).",
+            "Die Anrede \"Sie\" und \"Du\" wird oft nicht situationsangemessen verwendet."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in zeigt in verschiedenen sozialen Kontexten angemessene Verhaltensweisen und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in unterscheidet zwischen formellen und informellen Situationen und passt Sprache",
+            "und Verhalten entsprechend an.",
+            "Er/Sie verwendet konsequent die korrekte Anrede (Sie/Du) je nach Gesprächspartner und Kontext.",
+            "Er/Sie praktiziert täglich grundlegende Höflichkeitsformen (Begrüßung, Verabschiedung, Bitte, Danke) in",
+            "allen sozialen Interaktionen.",
+            "Er/Sie achtet auf ein gepflegtes Erscheinungsbild und angemessene Kleidung je nach Anlass.",
+            "Er/Sie respektiert die persönlichen Grenzen anderer und hält angemessene körperliche Distanz ein."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "3. Methodische Kompetenzen",
+      "subsections": [
+        {
+          "subsectionTitle": "3.1 Arbeitsorganisation",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, seinen/ihren Arbeitsplatz ordentlich und übersichtlich zu",
+            "halten, was zu Zeitverlusten durch Suchen von Materialien führt.",
+            "Arbeitsmaterialien und persönliche Gegenstände werden oft verlegt oder vergessen, was den",
+            "Arbeitsablauf stört.",
+            "Die zeitliche Strukturierung von Arbeitsaufgaben gelingt nicht; er/sie unterschätzt häufig den Zeitbedarf",
+            "für einzelne Tätigkeiten.",
+            "Bei komplexeren Aufgaben fällt es ihm/ihr schwer, diese in sinnvolle Teilschritte zu zerlegen und",
+            "systematisch abzuarbeiten.",
+            "To-Do-Listen, Kalender oder andere Planungshilfen werden nicht oder nur unzureichend genutzt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in organisiert seinen/ihren Arbeitsplatz und seine/ihre Arbeitsaufgaben strukturiert und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in räumt täglich vor Arbeitsende seinen/ihren Arbeitsplatz auf und sortiert Materialien",
+            "nach einem festgelegten System.",
+            "Er/Sie führt einen Kalender/Planer, in dem alle wichtigen Termine und Aufgaben notiert und nach",
+            "Priorität geordnet werden.",
+            "Er/Sie zerlegt größere Aufgaben in konkrete Teilschritte und erstellt dafür einen realistischen Zeitplan.",
+            "Er/Sie überprüft nach jeder abgeschlossenen Aufgabe die Vollständigkeit seiner/ihrer Arbeitsmaterialien.",
+            "Er/Sie reflektiert wöchentlich seine/ihre Arbeitsorganisation und identifiziert mindestens einen",
+            "Verbesserungsbereich."
+          ]
+        },
+        {
+          "subsectionTitle": "3.2 Lernfähigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, neue Informationen aufzunehmen und zu behalten. Bereits",
+            "vermittelte Inhalte müssen häufig wiederholt werden.",
+            "Es fällt ihm/ihr schwer, Zusammenhänge zwischen verschiedenen Lerninhalten herzustellen und",
+            "Gelerntes auf neue Situationen zu übertragen.",
+            "Er/Sie wendet keine systematischen Lernstrategien an und lernt eher unsystematisch und situativ.",
+            "Bei komplexen Aufgaben verliert er/sie schnell den Überblick und kann wichtige von unwichtigen",
+            "Informationen nicht unterscheiden.",
+            "Die Reflexion des eigenen Lernfortschritts gelingt ihm/ihr nicht; Schwierigkeiten werden oft nicht erkannt",
+            "oder benannt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt effektive Lernstrategien und kann neues Wissen nachhaltig aufnehmen und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in wendet mindestens zwei verschiedene Lernmethoden (z.B. Mindmaps,",
+            "Karteikarten, Lernplakate) an, um neue Informationen zu strukturieren.",
+            "Er/Sie fasst nach Unterrichtseinheiten die wichtigsten Inhalte mit eigenen Worten zusammen und notiert",
+            "offene Fragen.",
+            "Er/Sie erstellt einen persönlichen Lernplan mit regelmäßigen, kurzen Lerneinheiten statt intensiven",
+            "Lernphasen kurz vor Prüfungen.",
+            "Er/Sie erkennt eigene Lernstärken und -schwächen und passt seine/ihre Lernstrategien entsprechend",
+            "an.",
+            "Er/Sie überträgt gelernte Konzepte auf neue Situationen und erkennt Parallelen zwischen verschiedenen",
+            "Aufgabenstellungen."
+          ]
+        },
+        {
+          "subsectionTitle": "3.3 Problemlösefähigkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, Probleme systematisch zu analysieren und geeignete",
+            "Lösungsansätze zu entwickeln.",
+            "Bei Hindernissen oder unerwarteten Schwierigkeiten reagiert er/sie oft mit Ratlosigkeit oder Frustration,",
+            "anstatt nach alternativen Wegen zu suchen.",
+            "Es fällt ihm/ihr schwer, Probleme aus verschiedenen Perspektiven zu betrachten und kreative",
+            "Lösungsansätze zu finden.",
+            "Komplexe Probleme werden oft nicht in bearbeitbare Teilprobleme zerlegt, was zu Überforderung führt.",
+            "Er/Sie zieht selten Schlussfolgerungen aus früheren Problemlösungen, sodass ähnliche Fehler",
+            "wiederholt auftreten."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt systematische Problemlösestrategien und wendet diese bei verschiedenen",
+          "feinziele": [
+            "Der/Die Teilnehmer/in analysiert bei Problemen zunächst die Ausgangssituation und definiert das",
+            "gewünschte Ziel, bevor er/sie Lösungsansätze entwickelt.",
+            "Er/Sie sammelt bei Herausforderungen mindestens drei verschiedene Lösungsansätze und bewertet",
+            "diese systematisch nach Vor- und Nachteilen.",
+            "Er/Sie zerlegt komplexe Probleme in überschaubare Teilprobleme und erarbeitet schrittweise Lösungen.",
+            "Er/Sie nutzt bei Schwierigkeiten gezielt Informationsquellen (Internet, Fachliteratur, Experten) zur",
+            "Problemlösung.",
+            "Er/Sie dokumentiert gelöste Probleme und die angewandten Lösungsstrategien als Referenz für",
+            "zukünftige ähnliche Situationen."
+          ]
+        },
+        {
+          "subsectionTitle": "3.4 Informationsverarbeitung",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, relevante von irrelevanten Informationen zu unterscheiden,",
+            "was zu Überforderung bei der Informationsaufnahme führt.",
+            "Beim Lesen von Texten oder Arbeitsmaterialien werden wichtige Details oft überlesen oder falsch",
+            "interpretiert.",
+            "Es gelingt ihm/ihr nicht, Informationen aus verschiedenen Quellen zu vergleichen und zu einer eigenen",
+            "Einschätzung zu gelangen.",
+            "Die strukturierte Darstellung von Informationen (z. B. in Präsentationen oder Berichten) fällt ihm/ihr",
+            "schwer.",
+            "Bei der Recherche im Internet oder in anderen Medien werden Informationen oft unkritisch",
+            "übernommen, ohne die Quelle zu hinterfragen."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert seine/ihre Fähigkeit, Informationen effektiv zu sammeln, zu verarbeiten und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in markiert in Texten systematisch Schlüsselinformationen und erstellt",
+            "Zusammenfassungen mit eigenen Worten.",
+            "Er/Sie nutzt Strukturierungshilfen (Mindmaps, Tabellen, Diagramme), um Informationen übersichtlich",
+            "darzustellen.",
+            "Er/Sie prüft Informationsquellen auf ihre Zuverlässigkeit und vergleicht Angaben aus mindestens zwei",
+            "verschiedenen Quellen.",
+            "Er/Sie strukturiert bei der Informationsweitergabe seine/ihre Aussagen logisch und fokussiert auf die",
+            "wesentlichen Aspekte.",
+            "Er/Sie entwickelt ein persönliches System zur Organisation und Speicherung wichtiger Informationen",
+            "(digital oder analog)."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "4. Schulische Kompetenzen",
+      "subsections": [
+        {
+          "subsectionTitle": "4.1 Deutsch - Textverständnis und schriftlicher Ausdruck",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, schriftliche Arbeitsanweisungen oder Fachtexte selbstständig",
+            "zu verstehen und umzusetzen.",
+            "Beim Lesen längerer Texte gehen wichtige Informationen verloren; es fällt ihm/ihr schwer, den roten",
+            "Faden zu behalten.",
+            "Die eigene schriftliche Ausdrucksfähigkeit ist eingeschränkt; Texte sind oft unstrukturiert und enthalten",
+            "viele Rechtschreib- und Grammatikfehler.",
+            "Formelle Schreiben (Bewerbungen, Geschäftsbriefe) können nicht ohne intensive Hilfestellung erstellt",
+            "werden.",
+            "Der aktive Wortschatz ist begrenzt, was die präzise Formulierung von Gedanken erschwert."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert sein/ihr Textverständnis und seine/ihre schriftliche Ausdrucksfähigkeit für den",
+          "feinziele": [
+            "Der/Die Teilnehmer/in liest täglich mindestens 15 Minuten altersangemessene Texte und beantwortet",
+            "Verständnisfragen dazu.",
+            "Er/Sie unterstreicht in Arbeitsanweisungen die handlungsrelevanten Informationen und formuliert sie mit",
+            "eigenen Worten."
+          ]
+        },
+        {
+          "subsectionTitle": "4.2 Mathematische Grundkenntnisse",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat grundlegende Schwierigkeiten im Umgang mit Zahlen und mathematischen",
+            "Operationen, was im beruflichen Alltag zu Problemen führt.",
+            "Das Kopfrechnen bei einfachen Additions- und Subtraktionsaufgaben gelingt nicht sicher, Multiplikation",
+            "und Division werden vermieden.",
+            "Beim Umgang mit Maßeinheiten (Längen, Gewichte, Zeiteinheiten) treten regelmäßig Fehler auf.",
+            "Die Übertragung mathematischer Kenntnisse auf praktische Aufgaben (z. B. Materialberechnung,",
+            "Preiskalkulation) gelingt nicht selbstständig.",
+            "Das Verständnis für prozentuale Angaben und Verhältnisrechnungen (z. B. bei Mischungsverhältnissen)",
+            "ist nicht ausreichend vorhanden."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in festigt mathematische Grundkenntnisse und kann diese sicher in berufspraktischen",
+          "feinziele": [
+            "Der/Die Teilnehmer/in löst täglich fünf Kopfrechenaufgaben zu den vier Grundrechenarten im",
+            "Zahlenraum bis 100.",
+            "Er/Sie übt den Umgang mit relevanten Maßeinheiten und kann diese fehlerfrei umrechnen (z.B. mm in",
+            "cm, g in kg).",
+            "Er/Sie erstellt ein persönliches Nachschlagewerk mit wichtigen Formeln und Rechenregeln und nutzt",
+            "dieses bei Aufgaben.",
+            "Er/Sie wendet mathematische Kenntnisse auf praxisnahe Aufgaben an (z. B. Materialbedarf berechnen,",
+            "Kosten kalkulieren).",
+            "Er/Sie löst einfache Prozent- und Dreisatzaufgaben, die für den beruflichen Alltag relevant sind."
+          ]
+        },
+        {
+          "subsectionTitle": "4.3 Lese- und Schreibfähigkeit (für Teilnehmer mit geringen Grundkenntnissen)",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in verfügt nur über rudimentäre Lese- und Schreibkenntnisse, was die berufliche",
+            "Integration erheblich erschwert.",
+            "Einfache Texte werden nur sehr langsam und mühsam erlesen, komplexere Texte können nicht",
+            "selbstständig verstanden werden.",
+            "Die Handschrift ist oft unleserlich, und selbst kurze Notizen enthalten viele Rechtschreibfehler.",
+            "Formulare oder Anträge können nicht ohne intensive Unterstützung ausgefüllt werden.",
+            "Die eingeschränkte Schriftsprachkompetenz führt zu Vermeidungsverhalten und Schamgefühlen in",
+            "Situationen, die Lesen oder Schreiben erfordern."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert seine/ihre grundlegenden Lese- und Schreibfähigkeiten für den alltäglichen und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in übt täglich 20 Minuten das Lesen mit altersgerechten, einfachen Texten und",
+            "steigert dabei kontinuierlich die Lesegeschwindigkeit.",
+            "Er/Sie trainiert die Handschrift mit gezielten Übungen und achtet auf Lesbarkeit."
+          ]
+        },
+        {
+          "subsectionTitle": "4.4 Lernorganisation und Prüfungsvorbereitung",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat keine effektive Lernroutine entwickelt und lernt oft erst kurz vor Prüfungen",
+            "unter hohem Zeitdruck.",
+            "Lernmaterialien werden unstrukturiert und unsystematisch gesammelt, was das Wiederfinden relevanter",
+            "Informationen erschwert.",
+            "Es fehlt an einer systematischen Herangehensweise bei der Prüfungsvorbereitung; wichtige und",
+            "unwichtige Inhalte werden nicht priorisiert.",
+            "In Prüfungssituationen zeigt er/sie starke Nervosität, die zu Blackouts oder Leistungseinbußen führt.",
+            "Die Selbsteinschätzung bezüglich des eigenen Wissensstands ist unrealistisch, was zu Über- oder",
+            "Unterschätzung der erforderlichen Lernzeit führt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt eine strukturierte Lernorganisation und effektive Strategien zur",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erstellt einen realistischen Lernplan mit regelmäßigen, kürzeren Lerneinheiten",
+            "über einen längeren Zeitraum statt intensiver Last-Minute-Lernphasen.",
+            "Er/Sie sortiert Lernmaterialien thematisch und erstellt Übersichten zu prüfungsrelevanten Inhalten.",
+            "Er/Sie identifiziert die eigenen Lernpräferenzen (visuell, auditiv, haptisch) und wählt entsprechende",
+            "Lernmethoden.",
+            "Er/Sie übt Entspannungstechniken zur Stressbewältigung in Prüfungssituationen und wendet diese",
+            "gezielt an.",
+            "Er/Sie führt regelmäßige Selbsttests durch, um den eigenen Wissensstand realistisch einzuschätzen und",
+            "Lernlücken zu identifizieren."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "5. Lebenspraktische Fertigkeiten",
+      "subsections": [
+        {
+          "subsectionTitle": "5.1 Umgang mit Geld",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, sein/ihr monatliches Budget zu planen und einzuhalten.",
+            "Regelmäßig ist das Geld bereits Mitte des Monats aufgebraucht.",
+            "Es fehlt an Überblick über regelmäßige Ausgaben und Einnahmen; Rechnungen werden verspätet oder",
+            "gar nicht bezahlt.",
+            "Bei Einkäufen werden oft spontane, nicht notwendige Ausgaben getätigt, ohne die finanziellen Folgen zu",
+            "bedenken.",
+            "Er/Sie hat bereits Schulden angehäuft und/oder keinen Überblick über die eigene finanzielle Situation.",
+            "Wichtige finanzielle Verpflichtungen (Miete, Versicherungen) werden gegenüber Konsumwünschen nicht",
+            "priorisiert."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt einen verantwortungsvollen Umgang mit Finanzen und kann sein/ihr Budget",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erstellt eine Übersicht aller monatlichen Einnahmen und Ausgaben und führt ein",
+            "Haushaltsbuch.",
+            "Er/Sie erstellt einen Budgetplan, der notwendige Ausgaben priorisiert und einen festen Betrag für",
+            "Freizeit/persönliche Ausgaben vorsieht.",
+            "Er/Sie eröffnet ein separates Konto für feste monatliche Ausgaben und richtet Daueraufträge für",
+            "regelmäßige Zahlungen ein.",
+            "Er/Sie entwickelt Strategien zum sparsamen Einkaufen (Preisvergleiche, Einkaufslisten, saisonale",
+            "Produkte).",
+            "Er/Sie nimmt bei Bedarf Beratungsangebote (z. B. Schuldnerberatung) in Anspruch und setzt die",
+            "erhaltenen Empfehlungen um."
+          ]
+        },
+        {
+          "subsectionTitle": "5.2 Tagesstruktur und Selbstorganisation",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, einen geregelten Tagesablauf zu entwickeln und einzuhalten.",
+            "Aufsteh- und Schlafenszeiten variieren stark.",
+            "Regelmäßige Mahlzeiten, Körperhygiene und Haushaltsaufgaben werden vernachlässigt oder",
+            "unregelmäßig durchgeführt.",
+            "Es fehlt an Routinen für alltägliche Aufgaben, was zu Chaos und Vergesslichkeit führt.",
+            "Die Freizeit wird nicht aktiv gestaltet; stattdessen dominieren passive Aktivitäten wie übermäßiger",
+            "Medienkonsum.",
+            "Die Balance zwischen Arbeit, Verpflichtungen und Erholung gelingt nicht."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt eine stabile Tagesstruktur und Routinen für die selbstständige Bewältigung des",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erstellt einen Wochenplan mit festen Zeiten für Aufstehen, Mahlzeiten,",
+            "Arbeit/Schule, Haushalt und Freizeit.",
+            "Er/Sie etabliert eine Morgenroutine, die ein rechtzeitiges und stressfreies Ankommen am Arbeits-",
+            "/Ausbildungsplatz ermöglicht.",
+            "Er/Sie führt einen Kalender für Termine und regelmäßige Verpflichtungen und kontrolliert diesen täglich.",
+            "Er/Sie plant wöchentlich mindestens zwei aktive Freizeitaktivitäten ein und setzt diese um.",
+            "Er/Sie erstellt einen Haushaltsplan mit täglichen, wöchentlichen und monatlichen Aufgaben und hakt",
+            "erledigte Aufgaben ab."
+          ]
+        },
+        {
+          "subsectionTitle": "5.3 Umgang mit Behörden und Formularen",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in vermeidet den Kontakt mit Behörden und schiebt notwendige Behördengänge auf.",
+            "Amtliche Schreiben werden nicht verstanden, ignoriert oder verspätet bearbeitet.",
+            "Beim Ausfüllen von Formularen und Anträgen treten regelmäßig Schwierigkeiten auf, die ohne",
+            "Unterstützung nicht überwunden werden können.",
+            "Wichtige Unterlagen und Dokumente werden nicht systematisch aufbewahrt und sind bei Bedarf nicht",
+            "auffindbar.",
+            "Es fehlt an Wissen über zuständige Behörden und deren Aufgabenbereiche sowie über eigene Rechte",
+            "und Pflichten."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in kann Behördenangelegenheiten selbstständig und termingerecht erledigen.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in legt ein übersichtliches Ablagesystem für wichtige Dokumente an und sortiert",
+            "bestehende Unterlagen entsprechend ein."
+          ]
+        },
+        {
+          "subsectionTitle": "5.4 Wohnsituation und Haushaltsführung",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, seinen/ihren Wohnraum in einem ordentlichen und",
+            "hygienischen Zustand zu halten.",
+            "Grundlegende Haushaltstätigkeiten wie Reinigung, Wäschepflege oder Kochen werden nicht regelmäßig",
+            "oder fachgerecht durchgeführt.",
+            "Die Einteilung und Organisation von Haushaltsaufgaben gelingt nicht; oft werden diese erst erledigt,",
+            "wenn bereits erhebliche Mängel aufgetreten sind.",
+            "Es fehlt an Wissen über ökonomische und ökologische Haushaltsführung (z. B. Energiesparen,",
+            "Mülltrennung).",
+            "Die Wohnsituation ist nicht stabil oder angemessen (z. B. häufige Wohnungswechsel, drohende",
+            "Wohnungslosigkeit, ungeeignete Wohnverhältnisse)."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt Kompetenzen zur eigenständigen und nachhaltigen Haushaltsführung.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erstellt einen Wochenplan für regelmäßige Haushaltsaufgaben und setzt diesen",
+            "konsequent um.",
+            "Er/Sie erlernt grundlegende Techniken zur effizienten Reinigung und Pflege von Wohnraum und",
+            "Kleidung.",
+            "Er/Sie entwickelt Basiskompetenzen im Kochen und bereitet mindestens dreimal wöchentlich eine",
+            "ausgewogene Mahlzeit zu.",
+            "Er/Sie informiert sich über Möglichkeiten zum Energiesparen im Haushalt und setzt mindestens drei",
+            "konkrete Maßnahmen um.",
+            "Er/Sie ordnet seinen/ihren Wohnraum funktional und schafft eine angenehme Wohnatmosphäre."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "6. Interkulturelle Kompetenzen",
+      "subsections": [
+        {
+          "subsectionTitle": "6.1 Sprachliche Verständigung",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in verfügt über eingeschränkte Deutschkenntnisse, was die Kommunikation im",
+            "beruflichen und sozialen Kontext erheblich erschwert.",
+            "Fachbegriffe und komplexere Arbeitsanweisungen werden oft nicht verstanden, was zu",
+            "Missverständnissen und Fehlern führt.",
+            "Die aktive Sprachproduktion ist zögerlich; er/sie vermeidet längere Gespräche oder Diskussionen auf",
+            "Deutsch.",
+            "Schriftliche Kommunikation (E-Mails, Berichte, Formulare) bereitet besondere Schwierigkeiten.",
+            "Aufgrund der Sprachbarriere zieht er/sie sich in sozialen Situationen zurück oder sucht hauptsächlich",
+            "Kontakt zu Personen mit der gleichen Muttersprache."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in verbessert seine/ihre Deutschkenntnisse für eine effektive Kommunikation im beruflichen",
+          "feinziele": [
+            "Der/Die Teilnehmer/in erweitert seinen/ihren berufsspezifischen Wortschatz um mindestens 10 neue",
+            "Fachbegriffe pro Woche.",
+            "Er/Sie übt täglich 30 Minuten aktives Deutsch sprechen, lesen oder schreiben außerhalb des",
+            "strukturierten Sprachunterrichts.",
+            "Er/Sie erstellt ein persönliches Wörterbuch mit relevanten Begriffen und Redewendungen für den",
+            "Arbeitsalltag.",
+            "Er/Sie sucht aktiv Gespräche mit deutschsprachigen Kollegen/innen und übt, Fragen zu stellen und um",
+            "Klärung zu bitten.",
+            "Er/Sie nutzt zusätzliche Lernmöglichkeiten (Apps, Sprachaustausch, Medien auf Deutsch) zur",
+            "Verbesserung der Sprachkompetenz."
+          ]
+        },
+        {
+          "subsectionTitle": "6.2 Kulturelles Verständnis und Integration",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in hat Schwierigkeiten, die kulturellen Normen und impliziten Regeln im deutschen",
+            "Arbeits- und Gesellschaftskontext zu verstehen.",
+            "Unterschiede in Kommunikationsstilen, Arbeitsweisen oder Hierarchieverständnis führen zu",
+            "Missverständnissen oder Konflikten.",
+            "Er/Sie zeigt wenig Flexibilität bei der Anpassung an die neuen kulturellen Gegebenheiten und hält stark",
+            "an gewohnten Verhaltensweisen fest.",
+            "Die Balance zwischen der Bewahrung der eigenen kulturellen Identität und der Integration in die neue",
+            "Umgebung gelingt nicht optimal.",
+            "Die Orientierung in Alltagssituationen (Einkaufen, Behördengänge, Freizeitgestaltung) ist eingeschränkt",
+            "aufgrund mangelnder Kenntnisse über lokale Gepflogenheiten."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt Verständnis für die kulturellen Besonderheiten im deutschen Arbeits- und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in informiert sich gezielt über Arbeitskultur und Kommunikationsstile in Deutschland",
+            "und reflektiert Unterschiede zur Herkunftskultur.",
+            "Er/Sie nimmt aktiv an kulturellen Veranstaltungen oder Freizeitangeboten teil und erweitert dadurch",
+            "sein/ihr soziales Netzwerk.",
+            "Er/Sie identifiziert mindestens drei kulturelle Missverständnisse aus eigener Erfahrung und entwickelt",
+            "Strategien zur Vermeidung ähnlicher Situationen.",
+            "Er/Sie tauscht sich regelmäßig mit Kollegen/innen oder einem Mentor über kulturelle Fragen und",
+            "Herausforderungen aus.",
+            "Er/Sie nutzt seine/ihre bikulturellen Kompetenzen aktiv als Ressource im Arbeitskontext und bringt diese",
+            "wertschätzend ein."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "7. IT- und Medienkompetenz",
+      "subsections": [
+        {
+          "subsectionTitle": "7.1 Grundlegende PC-Kenntnisse",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in verfügt über unzureichende Grundkenntnisse im Umgang mit Computern, was die",
+            "berufliche Integration erschwert.",
+            "Die Bedienung grundlegender Programme (Textverarbeitung, E-Mail, Internet) gelingt nur mit erheblicher",
+            "Unterstützung.",
+            "Bei technischen Problemen oder ungewohnten Anwendungen ist er/sie schnell überfordert und findet",
+            "keine eigenständigen Lösungen.",
+            "Die Tastaturnutzung ist ineffizient (langsames Tippen mit wenigen Fingern), was die Arbeit am PC",
+            "zeitaufwendig macht.",
+            "Grundlegende Begriffe der digitalen Welt sind unbekannt oder werden nicht verstanden."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt sichere Grundkenntnisse im Umgang mit Computer und Standardsoftware für",
+          "feinziele": [
+            "Der/Die Teilnehmer/in übt täglich 20 Minuten das 10-Finger-Schreibsystem und steigert seine/ihre",
+            "Tippgeschwindigkeit kontinuierlich.",
+            "Er/Sie erstellt selbstständig strukturierte Dokumente mit einer Textverarbeitung unter Verwendung",
+            "grundlegender Formatierungsfunktionen.",
+            "Er/Sie kommuniziert professionell per E-Mail und beachtet dabei formale Standards und Netiquette.",
+            "Er/Sie recherchiert gezielt Informationen im Internet und bewertet die Qualität und Zuverlässigkeit von",
+            "Quellen.",
+            "Er/Sie erstellt eine persönliche Übersicht häufiger PC-Probleme und deren Lösungen als",
+            "Nachschlagewerk."
+          ]
+        },
+        {
+          "subsectionTitle": "7.2 Mediennutzung und -kritik",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in nutzt digitale Medien übermäßig oder einseitig, was zu Zeitverlust und Ablenkung",
+            "von wichtigen Aufgaben führt.",
+            "Es fehlt an kritischem Bewusstsein für Desinformation, Manipulation und Datenschutzrisiken im digitalen",
+            "Raum.",
+            "Die Selbstdarstellung in sozialen Medien ist unreflektiert und kann negative Auswirkungen auf die",
+            "berufliche Zukunft haben.",
+            "Das Potenzial digitaler Medien für Lernen und berufliche Weiterentwicklung wird nicht erkannt oder",
+            "genutzt.",
+            "Der Umgang mit persönlichen Daten ist unvorsichtig; Risiken wie Identitätsdiebstahl oder Betrug werden",
+            "unterschätzt."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt einen reflektierten, sicheren und ausgewogenen Umgang mit digitalen Medien.",
+          "feinziele": [
+            "Der/Die Teilnehmer/in reflektiert sein/ihr Nutzungsverhalten digitaler Medien und entwickelt einen Plan",
+            "zur ausgewogenen Mediennutzung.",
+            "Er/Sie lernt Merkmale von Falschinformationen zu erkennen und überprüft Informationen aus dem",
+            "Internet durch Vergleich mehrerer Quellen.",
+            "Er/Sie überprüft und optimiert seine/ihre Privatsphäre-Einstellungen in sozialen Netzwerken und anderen",
+            "digitalen Diensten.",
+            "Er/Sie nutzt gezielt digitale Lernressourcen (Online-Kurse, Tutorials, Lern-Apps) zur beruflichen",
+            "Weiterbildung.",
+            "Er/Sie entwickelt grundlegende Kenntnisse zu Datenschutz und Cybersicherheit und wendet",
+            "Schutzmaßnahmen im Alltag an."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "8. Andere Kompetenzbereiche",
+      "subsections": [
+        {
+          "subsectionTitle": "8.1 Gesundheitsbewusstsein",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in zeigt mangelndes Bewusstsein für gesundheitsrelevante Aspekte wie Ernährung,",
+            "Bewegung, Schlaf oder Suchtmittelkonsum.",
+            "Gesundheitliche Beeinträchtigungen werden ignoriert oder bagatellisiert; notwendige Arztbesuche",
+            "werden vermieden oder aufgeschoben.",
+            "Die Körperhygiene wird vernachlässigt, was zu sozialen Schwierigkeiten im beruflichen Umfeld führen",
+            "kann.",
+            "Es fehlt an Wissen über gesundheitsförderliche Verhaltensweisen und deren Bedeutung für die Arbeits-",
+            "und Leistungsfähigkeit."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt ein gesteigertes Gesundheitsbewusstsein und setzt gesundheitsförderliche",
+          "feinziele": [
+            "Der/Die Teilnehmer/in informiert sich über Grundlagen gesunder Ernährung und bereitet wöchentlich",
+            "mindestens drei ausgewogene Mahlzeiten zu.",
+            "Er/Sie integriert regelmäßige körperliche Aktivität in seinen/ihren Alltag (mindestens 30 Minuten an drei",
+            "Tagen pro Woche).",
+            "Er/Sie nimmt notwendige Vorsorgeuntersuchungen wahr und sucht bei gesundheitlichen Problemen",
+            "rechtzeitig ärztliche Hilfe.",
+            "Er/Sie achtet auf ausreichend Schlaf (6-8 Stunden) und entwickelt eine förderliche Abendroutine.",
+            "Er/Sie reflektiert seinen/ihren Konsum von Suchtmitteln und entwickelt bei Bedarf Strategien zur",
+            "Reduzierung."
+          ]
+        },
+        {
+          "subsectionTitle": "8.2 Selbstbewusstsein und Selbstwirksamkeit",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in zeigt ein geringes Selbstwertgefühl und zweifelt häufig an den eigenen",
+            "Fähigkeiten und Kompetenzen.",
+            "Bei Herausforderungen gibt er/sie schnell auf, da die Überzeugung fehlt, diese bewältigen zu können.",
+            "Erfolge werden externen Faktoren oder Zufall zugeschrieben, während Misserfolge als Bestätigung der",
+            "eigenen Unzulänglichkeit interpretiert werden.",
+            "Es fällt ihm/ihr schwer, eigene Stärken zu benennen oder diese aktiv einzusetzen.",
+            "In sozialen Situationen tritt er/sie unsicher auf und hat Schwierigkeiten, eigene Bedürfnisse und",
+            "Meinungen zu äußern."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in stärkt sein/ihr Selbstbewusstsein und entwickelt ein positives Selbstkonzept mit Vertrauen",
+          "feinziele": [
+            "Der/Die Teilnehmer/in identifiziert und dokumentiert wöchentlich mindestens drei eigene Stärken oder",
+            "gelungene Aktivitäten (Erfolgstagebuch).",
+            "Er/Sie übernimmt schrittweise anspruchsvollere Aufgaben und reflektiert den Zusammenhang zwischen",
+            "eigenen Anstrengungen und Erfolg.",
+            "Er/Sie übt, in Gruppensituationen eigene Meinungen und Ideen einzubringen, beginnend mit vertrauten",
+            "Themen und Personen.",
+            "Er/Sie entwickelt realistische Selbsteinschätzungen durch regelmäßiges Feedback-Einholen und die",
+            "Reflexion von Stärken und Entwicklungsfeldern.",
+            "Er/Sie lernt, negative Selbstgespräche zu erkennen und durch konstruktive, lösungsorientierte",
+            "Gedanken zu ersetzen."
+          ]
+        },
+        {
+          "subsectionTitle": "8.3 Motivationssteigerung und Eigeninitiative",
+          "problembeschreibungen": [
+            "Der/Die Teilnehmer/in zeigt geringe intrinsische Motivation für Ausbildungs- und Arbeitsaufgaben und",
+            "benötigt häufig externe Anreize.",
+            "Es fehlt an Eigeninitiative; Aufgaben werden oft nur auf direkte Aufforderung hin erledigt.",
+            "Längerfristige Ziele werden nicht verfolgt, wenn kurzfristige Anstrengungen erforderlich sind oder",
+            "Hindernisse auftreten."
+          ],
+          "grobziel": "Der/Die Teilnehmer/in entwickelt intrinsische Motivation und Eigeninitiative für berufliche Aufgaben und",
+          "feinziele": [
+            "Der/Die Teilnehmer/in identifiziert persönliche Interessen und stellt Verbindungen zwischen diesen und",
+            "beruflichen Anforderungen her.",
+            "Er/Sie setzt sich wöchentlich kleine, erreichbare Ziele und belohnt sich selbst für deren Erreichung.",
+            "Er/Sie sucht aktiv nach Aufgaben, bei denen er/sie Verantwortung übernehmen kann, und führt diese",
+            "eigenständig zu Ende.",
+            "Er/Sie reflektiert regelmäßig, welchen Sinn und Nutzen die aktuellen Tätigkeiten für die eigene Zukunft",
+            "haben.",
+            "Er/Sie identifiziert motivationshemmende Faktoren und entwickelt Strategien, um mit diesen konstruktiv",
+            "umzugehen."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "9. Abschluss- und Kombinationsbausteine",
+      "subsections": [
+        {
+          "subsectionTitle": "9.1 Übergreifende Zielvereinbarungen",
+          "grobziel": "Der/Die Teilnehmer/in entwickelt umfassende berufliche Handlungskompetenz durch die Integration",
+          "feinziele": [
+            "Der/Die Teilnehmer/in identifiziert die Zusammenhänge zwischen verschiedenen Kompetenzbereichen",
+            "und deren Bedeutung für den beruflichen Erfolg.",
+            "Er/Sie setzt die erarbeiteten Strategien in verschiedenen Handlungsfeldern (Ausbildung, Beruf,",
+            "Privatleben) konsequent um.",
+            "Er/Sie reflektiert regelmäßig die eigene Entwicklung und passt Ziele und Maßnahmen entsprechend an.",
+            "Er/Sie überträgt Erfolgserlebnisse aus einem Kompetenzbereich auf andere Bereiche und nutzt positive",
+            "Erfahrungen als Motivationsquelle.",
+            "Er/Sie übernimmt zunehmend Eigenverantwortung für den Förderprozess und bringt eigene Ideen zur",
+            "Zielerreichung ein."
+          ]
+        },
+        {
+          "subsectionTitle": "9.2 Vorbereitung auf den Übergang",
+          "grobziel": "Der/Die Teilnehmer/in bereitet sich systematisch auf den nächsten Schritt (Ausbildung, Beschäftigung,",
+          "feinziele": [
+            "Der/Die Teilnehmer/in verschafft sich einen Überblick über realistische berufliche Perspektiven und",
+            "Anforderungen.",
+            "Er/Sie erstellt vollständige und ansprechende Bewerbungsunterlagen, die auf das jeweilige Berufsfeld",
+            "zugeschnitten sind.",
+            "Er/Sie übt Vorstellungsgespräche mit verschiedenen Schwerpunkten und entwickelt sichere",
+            "Selbstpräsentation.",
+            "Er/Sie entwickelt Strategien zum Umgang mit möglichen Herausforderungen im neuen Umfeld.",
+            "Er/Sie erarbeitet einen konkreten Plan für die ersten Wochen im neuen Kontext, der",
+            "Unterstützungsmöglichkeiten berücksichtigt."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Hinweise zur Anwendung",
+      "content": [
+        "Diese Textbausteine sollen als Inspirationsquelle und Arbeitshilfe dienen. Für eine individuelle und",
+        "wirksame Förderplanung ist es wichtig:",
+        "1.\tDie Formulierungen an die spezifische Situation und die Sprachebene des jeweiligen",
+        "Teilnehmers anzupassen.",
+        "2.\tDie Teilnehmer aktiv in die Erstellung der Zielvereinbarung einzubeziehen und ihre",
+        "Perspektive zu berücksichtigen.",
+        "3.\tRealistische und messbare Feinziele zu setzen, die innerhalb des vereinbarten Zeitraums",
+        "erreicht werden können.",
+        "4.\tDie Zielvereinbarung regelmäßig zu überprüfen und bei Bedarf anzupassen.",
+        "5.\tRessourcen und Unterstützungsmöglichkeiten klar zu benennen und verfügbar zu machen."
+      ]
+    },
+    {
+      "sectionTitle": "Anwendung der S.M.A.R.T.-Kriterien bei der Zielformulierung:",
+      "content": [
+        "Besonders bei der Festlegung von Feinzielen ist die Orientierung an den S.M.A.R.T.-Kriterien hilfreich,",
+        "um wirkungsvolle Zielvereinbarungen zu treffen:",
+        "•\tSpezifisch: Ziele sollten konkret und eindeutig formuliert sein. Vage Aussagen wie \"besser",
+        "werden\" oder \"mehr machen\" sollten vermieden werden. Stattdessen präzise festlegen, was",
+        "genau erreicht werden soll (z.B. \"täglich 15 Minuten lesen\" statt \"mehr lesen\").",
+        "•\tMessbar: Die Zielerreichung muss überprüfbar sein. Definieren Sie klare Kriterien, anhand",
+        "derer der Erfolg gemessen werden kann (z.B. \"an 4 von 5 Arbeitstagen pünktlich erscheinen\"",
+        "statt \"pünktlicher sein\").",
+        "•\tAttraktiv/Akzeptiert: Ziele müssen für den Teilnehmer bedeutsam und motivierend sein. Sie",
+        "sollten gemeinsam erarbeitet werden und an die individuellen Bedürfnisse und Interessen",
+        "anknüpfen. Der Teilnehmer sollte den Sinn und Nutzen des Ziels erkennen können.",
+        "•\tRealistisch: Ziele sollten herausfordernd, aber erreichbar sein. Überforderung führt zu",
+        "Frustration, Unterforderung zu mangelnder Motivation. Die individuellen Voraussetzungen und",
+        "verfügbaren Ressourcen müssen berücksichtigt werden.",
+        "•\tTerminiert: Für jedes Ziel sollte ein klarer zeitlicher Rahmen festgelegt werden. Konkrete",
+        "Zeitangaben (z.B. \"innerhalb der nächsten vier Wochen\", \"bis zum 15.03.\") erhöhen die",
+        "Verbindlichkeit und ermöglichen eine strukturierte Überprüfung.",
+        "Bei der Anwendung der S.M.A.R.T.-Kriterien empfiehlt es sich, jedes formulierte Feinziel kritisch zu",
+        "überprüfen: Erfüllt es alle fünf Kriterien? Falls nicht, sollte die Zielformulierung entsprechend",
+        "angepasst werden. Dies erhöht die Wahrscheinlichkeit einer erfolgreichen Umsetzung und positiven",
+        "Entwicklung des Teilnehmers.",
+        "Die wirksamsten Zielvereinbarungen entstehen im Dialog mit dem Teilnehmer und berücksichtigen",
+        "sowohl Förderbedarf als auch vorhandene Stärken und Ressourcen.",
+        "Stand 04.02.2025"
+      ]
+    }
+  ]
+}
